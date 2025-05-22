@@ -242,7 +242,7 @@ All these Google Cloud tools are designed to work together seamlessly. You can a
 
 ---
 
-#### Deep learning ####
+# Deep learning #
 
 A broad field that encompasses many different techniques, one of which is deep learning (DL). Deep learning is a powerful subset of machine learning, distinguished by its use of artificial neural networks. These networks enable the processing of highly complex patterns and the generation of sophisticated predictions. Neural networks can leverage both labeled and unlabeled data, a strategy known as semi-supervised learning. They train on a blend of a small amount of labeled data and a large amount of unlabeled data. That way, they learn foundational concepts and generalize effectively to novel examples. Generative AI uses the power of deep learning to create new content spanning text, images, audio, and beyond. Deep learning techniques, particularly those centered on neural networks, are the engine behind these generative models.
 
@@ -273,7 +273,7 @@ Diffusion models - Diffusion models are another type of foundational model. They
 
 ---
 
-### Google Cloud's ML models ###
+# Google Cloud's ML models #
 
 **Vertex AI** streamlines the integration of advanced artificial intelligence capabilities into business applications, allowing for seamless discovery, deployment, and customization. These models empower businesses to leverage cutting-edge AI, providing the flexibility to work with many different models without the need for extensive in-house model development. 
 With Vertex AI you can access models developed by Google including Gemini, Gemma, Imagen, and Veo. You can also access proprietary third-party models, and openly available models.
