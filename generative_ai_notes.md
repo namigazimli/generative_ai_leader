@@ -179,6 +179,7 @@ Generative AI: An application of AI that creates new content.
 2. Cost - Gathering and cleaning data can be expensive. The cost of acquiring high-quality data can be a significant barrier to AI development, especially for smaller organizations.
 3. Format - Data needs to be in a format that the AI model can understand and process. Converting data into the appropriate format can be time-consuming and technically challenging.
 
+---
 
 ### Machine learning approaches and data requirements ###
 
@@ -239,6 +240,8 @@ Vertex AI simplifies this by providing tools to put the model into action for ge
 
 All these Google Cloud tools are designed to work together seamlessly. You can also connect them with your existing tools or build your own custom solutions. And throughout the entire process, Google Cloud's infrastructure ensures your solution is available and reliable. At the same time, Identity and Access Management (IAM) keeps your data safe and ensures only the right people have access.
 
+---
+
 #### Deep learning ####
 
 A broad field that encompasses many different techniques, one of which is deep learning (DL). Deep learning is a powerful subset of machine learning, distinguished by its use of artificial neural networks. These networks enable the processing of highly complex patterns and the generation of sophisticated predictions. Neural networks can leverage both labeled and unlabeled data, a strategy known as semi-supervised learning. They train on a blend of a small amount of labeled data and a large amount of unlabeled data. That way, they learn foundational concepts and generalize effectively to novel examples. Generative AI uses the power of deep learning to create new content spanning text, images, audio, and beyond. Deep learning techniques, particularly those centered on neural networks, are the engine behind these generative models.
@@ -252,37 +255,119 @@ Diffusion models - Diffusion models are another type of foundational model. They
 
 ### Factors when choosing a model for your use case ###
 
-1. Modality - When selecting a generative AI model, it's crucial to consider the modality of your input and output. Modality refers to the type of data the model can process and generate, such as text, images, video, or audio. If your application focuses on a single data type, like generating text-based articles or creating audio files, you'll want to choose a model optimized for that specific modality. For applications that require handling multiple data types, such as generating image captions (processing images and producing text) or creating video with accompanying audio, you'll need a multimodal model. These models can understand and synthesize information across different modalities.
+1. *Modality* - When selecting a generative AI model, it's crucial to consider the modality of your input and output. Modality refers to the type of data the model can process and generate, such as text, images, video, or audio. If your application focuses on a single data type, like generating text-based articles or creating audio files, you'll want to choose a model optimized for that specific modality. For applications that require handling multiple data types, such as generating image captions (processing images and producing text) or creating video with accompanying audio, you'll need a multimodal model. These models can understand and synthesize information across different modalities.
 
-2. Context window - The context window refers to the amount of information a model can consider at one time when generating a response. A larger context window allows the model to "remember" more of the conversation or document, leading to more coherent and relevant outputs, especially for longer texts or complex tasks. However, larger context windows often come with increased computational costs. You need to balance the need for context with the practical limitations of your resources.
+2. *Context window* - The context window refers to the amount of information a model can consider at one time when generating a response. A larger context window allows the model to "remember" more of the conversation or document, leading to more coherent and relevant outputs, especially for longer texts or complex tasks. However, larger context windows often come with increased computational costs. You need to balance the need for context with the practical limitations of your resources.
 
-3. Security - Security is paramount, especially when dealing with sensitive data. Consider the model's security features, including data encryption, access controls, and vulnerability management. Ensure the model complies with relevant security standards and regulations for your industry.
+3. *Security* - Security is paramount, especially when dealing with sensitive data. Consider the model's security features, including data encryption, access controls, and vulnerability management. Ensure the model complies with relevant security standards and regulations for your industry.
 
-4. Availability and reliability - The availability and reliability of the model are crucial for production applications. Choose a model that is consistently available and performs reliably under load. Consider factors like uptime guarantees, redundancy, and disaster recovery mechanisms.
+4. *Availability and reliability* - The availability and reliability of the model are crucial for production applications. Choose a model that is consistently available and performs reliably under load. Consider factors like uptime guarantees, redundancy, and disaster recovery mechanisms.
 
-5. Cost - Generative AI models can vary significantly in cost. Consider the pricing model, which might be based on usage, compute time, or other factors. Evaluate the cost-effectiveness of the model in relation to your budget and the expected value of your application. This is where selecting the right model for the right task is important. Be sure to match the model to the task; bigger isn't always better, and multi-modal capabilities aren't always necessary.
+5. *Cost* - Generative AI models can vary significantly in cost. Consider the pricing model, which might be based on usage, compute time, or other factors. Evaluate the cost-effectiveness of the model in relation to your budget and the expected value of your application. This is where selecting the right model for the right task is important. Be sure to match the model to the task; bigger isn't always better, and multi-modal capabilities aren't always necessary.
 
-6. Performance - The performance of the model, including its accuracy, speed, and efficiency, is a critical factor. Evaluate the model's performance on relevant benchmarks and datasets. Consider the trade-offs between performance and cost.
+6. *Performance* - The performance of the model, including its accuracy, speed, and efficiency, is a critical factor. Evaluate the model's performance on relevant benchmarks and datasets. Consider the trade-offs between performance and cost.
 
-7. Fine-tuning and customization - Some models can be fine-tuned or customized for specific tasks or domains. If you have a specialized use case, consider models that offer fine-tuning capabilities. This often involves training the model further on a specific dataset related to your use case.
+7. *Fine-tuning and customization* - Some models can be fine-tuned or customized for specific tasks or domains. If you have a specialized use case, consider models that offer fine-tuning capabilities. This often involves training the model further on a specific dataset related to your use case.
 
-8. Ease of integration - The ease of integrating the model into your existing systems and workflows is an important consideration. Look for models that offer well-documented APIs and SDKs.
+8. *Ease of integration* - The ease of integrating the model into your existing systems and workflows is an important consideration. Look for models that offer well-documented APIs and SDKs.
+
+---
 
 ### Google Cloud's ML models ###
 
-Vertex AI streamlines the integration of advanced artificial intelligence capabilities into business applications, allowing for seamless discovery, deployment, and customization. These models empower businesses to leverage cutting-edge AI, providing the flexibility to work with many different models without the need for extensive in-house model development. 
+**Vertex AI** streamlines the integration of advanced artificial intelligence capabilities into business applications, allowing for seamless discovery, deployment, and customization. These models empower businesses to leverage cutting-edge AI, providing the flexibility to work with many different models without the need for extensive in-house model development. 
 With Vertex AI you can access models developed by Google including Gemini, Gemma, Imagen, and Veo. You can also access proprietary third-party models, and openly available models.
 
-Gemini - Gemini, a multimodal model, can understand and operate across diverse data formats, such as text, images, audio, and video. Gemini's multimodal design supports applications that require complex multimodal understanding, advanced conversational AI, content creation, and nuanced question answering.
+**Gemini** - Gemini, a multimodal model, can understand and operate across diverse data formats, such as text, images, audio, and video. Gemini's multimodal design supports applications that require complex multimodal understanding, advanced conversational AI, content creation, and nuanced question answering.
 
-Gemma - A family of lightweight, open models is built upon the research and technology behind Gemini. They offer developers a user-friendly and customizable solution for local deployments and specialized AI applications.
+**Gemma** - A family of lightweight, open models is built upon the research and technology behind Gemini. They offer developers a user-friendly and customizable solution for local deployments and specialized AI applications.
 
-Imagen - A powerful text-to-image diffusion model, it excels at generating high-quality images from textual descriptions. This makes it invaluable for creative design, ecommerce visualization, and content creation.
+**Imagen** - A powerful text-to-image diffusion model, it excels at generating high-quality images from textual descriptions. This makes it invaluable for creative design, ecommerce visualization, and content creation.
 
-Veo - A model capable of generating video content. It can produce videos based on textual descriptions or still images. Its functionality allows for the creation of moving images for applications such as film production, advertising, and online content.
+**Veo** - A model capable of generating video content. It can produce videos based on textual descriptions or still images. Its functionality allows for the creation of moving images for applications such as film production, advertising, and online content.
 
 Collectively, these Google Cloud foundation models empower businesses to enhance customer experiences through intelligent chatbots and personalized content. They increase productivity by automating tasks and improving information retrieval. They foster innovation by generating new ideas and designs. They also derive data-driven insights for improved decision-making.
 
+---
 
 ### Google strategies for foundation model limitations ###
 
+# Foundation model limitations
+
+1. **Data dependency** - The performance of foundation models is heavily data-dependent. They require large datasets, and any biases or incompleteness in that data will inevitably seep into their outputs. It's like asking a student to write an essay on a book they haven't read. If the data or questions are inaccurate or biased, the AI's performance will suffer.
+
+2. **Knowledge cutoff** - Knowledge cutoff is the last date that an AI model was trained on new information. Models with older knowledge cutoffs may not know about recent events or discoveries. This can lead to incorrect or outdated answers, since AI models don't automatically update with the latest happenings around the world. For example, if an AI tool's last training date was in 2022, it wouldn't be able to provide information about events or information that happened after 2022. 
+
+3. **Bias** - An LLM learns from large amounts of data, which may contain biases. You can think of bias as an unbalanced dataset in LLMs. Due to their statistical learning nature, they can sometimes amplify existing biases present in the data. Even subtle biases in the training data can be magnified in the model's outputs.
+
+4. **Fairness** - Even with perfectly balanced data, defining what constitutes fairness in an LLM's output is a complex task. Fairness can be interpreted in various ways. Fairness assessments for generative AI models, while valuable, have inherent limitations. These evaluations typically focus on specific categories of bias, potentially overlooking other forms of prejudice. Consequently, these benchmarks do not provide a complete picture of all potential risks associated with the models' outputs, highlighting the ongoing challenge of achieving truly equitable AI.
+
+5. **Hallucinations** - Foundation models can sometimes experience hallucinations, which means they produce outputs that aren't accurate or based on real information. Because foundation models can't verify information against external sources, they may generate factually incorrect or nonsensical responses. These cause significant concern in accuracy-critical applications. The responses might sound convincing, but they are completely wrong. 
+
+6. **Edge cases** - Rare and atypical scenarios can expose a model's weaknesses, leading to errors, misinterpretations, and unexpected results. 
+
+## Techniques to overcome limitations ##
+
+1. **Grounding** - Generative AI models are amazing at creating content, but sometimes they hallucinate. Grounding is the process of connecting the AI's output to verifiable sources of information—like giving AI a reality check. By providing the model with access to specific data sources, we tether its output to real-world information, reducing the risk of invented content. Grounding is essential for building trustworthy and reliable AI applications. By connecting your models to verifiable data, you ensure accuracy and build confidence. It offers several key benefits, including reducing hallucinations, which prevents the AI from generating false or fictional information. Grounding also anchors responses, ensuring the AI's answers are rooted in your provided data sources. Furthermore, it builds trust by enhancing the trustworthiness of the AI's output by providing citations and confidence scores, allowing you to verify the information.
+
+2. **Retrieval-augmented generation (RAG)** - There are many different options on how you can ground in data. For example, you can ground in enterprise data or you can ground using Google Search. One common grounding method to do this is with **retrieval-augmented generation**, or **RAG**. RAG is a grounding method that uses search to find relevant information from a knowledge base and provides that information to the LLM, giving it necessary context. The first step is retrieval. When you ask an AI a question, RAG uses a search engine to find relevant information. This search engine uses an index that understands the semantic meaning of the text, not just keywords. This means it finds information based on meaning, ensuring higher relevance. The retrieved information is then added to the prompt given to the AI. This is the augmentation phase. The AI then uses this augmented prompt, along with its existing knowledge, to generate a response. This is referred to as the generation phase.
+
+3. **Prompt engineering** - Prompting offers the most rapid and straightforward approach to supplying supplementary background information to models. This involves crafting precise prompts to guide the model towards desired outputs. It refines results by understanding the factors that influence a model's responses. However, prompting is limited by the model's existing knowledge; it can't conjure information it hasn't learned.
+
+4. **Fine-tuning** - When prompt engineering doesn't deliver the desired outcomes, fine-tuning can enhance your model's performance. Pre-trained models are powerful, but they're designed for general purposes. Tuning helps them excel in specific areas. This process is particularly useful for specific tasks or when you need to enforce specific output formats, especially if you have examples of the desired output. Tuning involves further training a pre-trained or foundation model on a new dataset specific to your task. This process adjusts the model's parameters, making it more specialized for your needs. Google Cloud Vertex AI provides tooling to facilitate tuning. Here are some examples of how tuning can be used:
+- Fine-tuning a language model to generate creative content in a specific style.
+- Fine-tuning a code generation model to generate code in a particular programming language.
+- Fine-tuning a translation model to translate between specific languages or domains.
+
+
+### Humans in the loop (HITL) ###
+
+Beyond these techniques, we must remember the invaluable role of humans in the loop (HITL). Machine learning models are powerful, but they sometimes need a human touch. For tasks requiring judgment, context, or handling incomplete data, human expertise is essential. HITL systems integrate human input and feedback directly into the ML process. This collaboration makes models more adaptable, especially in areas like the following.
+
+***Content moderation*** - HITL ensures accurate and contextually appropriate moderation of user-generated content, filtering out harmful or inappropriate material that algorithms alone might miss.
+***Sensitive applications*** - In fields like healthcare or finance, HITL provides oversight for critical decisions, ensuring accuracy and mitigating risks associated with automated systems.
+***High-risk decision making*** - When ML models inform decisions with significant consequences, such as medical diagnoses or criminal justice assessments, HITL acts as a safeguard, providing a layer of human review and accountability.
+***Pre-generation review*** - Before deploying ML-generated content or decisions, human experts can review and validate the outputs, catching potential errors or biases before they impact users.
+***Post-generation review*** - After ML outputs are deployed, continuous human review and feedback help identify areas for improvement, enabling models to adapt to evolving contexts and user needs.
+
+---
+
+# Secure AI #
+
+Secure AI is about preventing intentional harm being done to your applications. This is about protecting AI systems from malicious attacks and misuse. For all applications, including AI, you need to ensure security throughout the full lifecycle from development through deployment. This includes considering the data, infrastructure, and how and where applications are deployed. To better understand how these security principles apply, let's reexamine the machine learning lifecycle from an earlier lesson.
+
+**Gather your data** - The foundation of any robust AI system is secure data. Therefore, data must be protected and secured at all times. Access controls must be implemented to restrict who can access the data. They are also necessary to restrict who can add or input to the data. This is crucial to prevent data poisoning, a malicious attack where bad actors corrupt your AI model’s training data by introducing manipulated data. This can cause your model to learn incorrect patterns and make flawed (biased, inaccurate, or even harmful) predictions. It's akin to someone secretly swapping out vital ingredients in a recipe, leading to a disastrous final dish.
+
+**Prepare your data** - During data preparation, special attention should be paid to confidential or sensitive data that might be present in the training data. Where feasible, anonymization techniques should be applied to this data, mitigating potential privacy risks. Data also should be rigorously validated, using integrity checks and anomaly detection to prevent poisoning. Data should be securely processed with encryption both at rest and in use. Logging and real-time monitoring should also be performed.
+
+**Train your model** - Securing the model and the training process is paramount. This means safeguarding both the training data and model parameters from unauthorized access or modification. Model theft, where attackers steal proprietary or sensitive AI models, is a significant threat. Beyond gaining a competitive advantage, the stolen models could be used for malicious purposes, exploiting vulnerabilities or replicating sensitive functionality.
+
+**Manage your model** - Continuous monitoring and maintenance of the model's security are essential. Stay up to date on the latest security best practices in the field, specifically for your platform and model, and regularly update to patch vulnerabilities. Monitor model performance and outputs for anomalies or signs of tampering, and regularly review access permissions.
+
+**Deploy and predict** - Once your model is trained and ready for action, it's crucial to safeguard it within its operating environment. This means controlling access to the model, determining who can interact with it and how. If you're using a pre-built model, it's essential to verify its source and check for any potential vulnerabilities.
+
+Think of it like installing a high-tech security system in your office. You wouldn't give everyone the master key, right? Similarly, you need to restrict access to your model and filter the information it receives and sends out. One major risk here is adversarial attacks, where attackers try to trick the model with misleading information. Imagine someone trying to bypass your security system with a fake ID—that's essentially what an adversarial attack does to your AI. Therefore, it's critical to have safeguards in place to filter, sanitize, and check the data coming into your model, ensuring it's not being fed misleading information. Likewise, you need to monitor the information your model sends out. Think of it as screening outgoing messages to prevent any accidental leaks of sensitive data or the spread of harmful content.
+
+Keeping AI applications secure demands constant vigilance and staying informed about the latest security threats and research.
+
+**Applying the Secure AI Framework (SAIF)** - Google has developed the Secure AI Framework, or SAIF, to establish security standards for building and deploying AI systems responsibly. This comprehensive approach to AI/ML model risk management addresses the key concerns of security professionals in the rapidly evolving landscape of AI. Following the security practices outlined in SAIF can help your organization find and stop threats, automatically strengthen its defenses, and manage the unique risks of each AI system. The framework is designed to integrate with your company’s existing security, ensuring that AI models are secure by default. For more information, explore [Google's Secure AI Framework (SAIF)](https://safety.google/cybersecurity-advancements/saif/).
+
+**Google Cloud security tools** - Platforms such as Google Cloud can facilitate secure development. In addition to the Secure AI Framework, Google Cloud offers a range of tools to ensure applications remain secure throughout their lifecycle. Google Cloud has built security into its core through a secure-by-design infrastructure, encompassing its global network and hardware, as well as robust encryption in transit and at rest. It provides customers with detailed control over access and usage of cloud resources through Identity and Access Management (IAM). Google Cloud Security Command Center provides a centralized view of your security posture across your entire Google Cloud environment, and Google Cloud also offers tools for monitoring various workloads.
+
+---
+
+# Responsible AI #
+
+Responsible AI means ensuring your AI applications avoid intentional and unintentional harm. It’s important to consider ethical development and positive outcomes for the software you develop. The same holds true, and perhaps even more so, for AI applications. The foundation of responsible AI is security. Secure applications protect both your company and your users. Think of it like building a house: if the foundation is weak, the entire structure is compromised, no matter how beautiful the design. Just as a strong foundation ensures a stable and safe house, robust security forms the essential foundation for building truly responsible AI.
+
+**Transparency is key** - Transparency is paramount for responsible applications. Users need to understand how their information is being used and how the AI system works. This transparency should extend to all aspects of the AI's operation, including data handling, decision-making processes, and potential biases.
+
+**Privacy in the age of AI** - Protecting privacy often involves anonymizing or pseudonymizing data, ensuring individuals can't be easily identified. AI models can sometimes inadvertently leak sensitive information from their training data, so it's crucial to implement safeguards to prevent this.
+
+**Data quality, bias, and fairness**
+1. Ethical AI requires high quality data - Machine learning and generative AI applications are fundamentally based on data. Therefore, responsible AI requires high-quality data. Inaccurate or incomplete data can lead to biased outcomes. Remember, technology often reflects existing societal biases. Without careful consideration, AI can amplify these biases, leading to unfair and discriminatory results. Beyond data quality, it's crucial to consider the responsible use of the data itself. Was it collected consensually? Could it perpetuate harmful biases?
+
+2. Understanding and mitigating bias - AI systems are not independent of the world they are built in. They can inherit and amplify existing societal biases. This can lead to unfair outcomes, such as a resume-screening tool that favors a certain demographic of candidates due to historical biases in hiring data. It's like training a dog with biased commands; the dog will learn and replicate those biases. To counter this, fairness must be a core principle in AI development.
+
+**Accountability and explainability**
+1. Fairness requires accountability - Fairness requires accountability. We need to know who is responsible for the AI's actions and understand how it makes decisions. This is where explainability comes in. Explainable AI makes the decision-making processes of AI models transparent and understandable. This is crucial for building trust, debugging errors, and uncovering hidden biases. Think of it like a judge explaining their verdict; without a clear explanation, it's hard to trust the decision. Tools like Google Cloud’s Vertex Explainable AI can help understand model outputs and identify potential biases. Understanding how your application uses and interprets the AI's output is crucial for ensuring responsible use.
