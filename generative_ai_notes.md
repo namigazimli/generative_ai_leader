@@ -57,10 +57,146 @@ Automated documentation
 Automated notifications and alarms
 - Automate customer feedback analysis and ticket creation.
 
-
 Multimodal GenAI - Gen AI can process and integrate information from diverse formats like plain text, images, videos, audio, and PDFs. This capability–known as multimodal gen AI–means that models can process various input types individually or combine multiple kinds of data simultaneously.
 
 Vertex AI is Google Cloud's unified machine learning (ML) platform. It empowers you to build, train, and deploy ML models and AI applications. For multiple modalities (text, code, images, speech), Vertex AI gives you access to Google's large generative AI models through Model Garden. You can tune Google's LLMs to meet your needs, and then deploy them for use in your AI-powered applications.
+
+Artificial Intelligence (AI) - Computer systems perform tasks that typically require human intelligence.
+Machine Learning (ML) - Systems learn from data to solve specific problems.
+
+Gemini - Trained on a massive dataset of text, images, code, audio, video, and more. This multimodal training allows Gemini to perform tasks across various domains, including language understanding, image generation, code generation, and more.
+Imagen - Trained primarily on a massive dataset of images and text descriptions. This enables Imagen to generate high-quality images from text descriptions, perform image editing tasks, and understand the content of images.
+Chirp - Trained on a large dataset of audio in various languages. Chirp is designed for speech recognition and can be used for tasks like voice assistants, transcription, and translation. Find information at the right time.
+
+Foundation models, like other AI models, take in inputs, which are called prompts, to produce outputs.
+While all AI models have inputs or prompts, foundation models are usually much more flexible in what you can prompt. For example, some AI models have strict requirements on the type of inputs they can handle. They may only handle numbers, emails, or images.
+Foundation models, and especially multimodal foundation models, can take in a much broader set of inputs.
+
+Top-down and bottom-up strategy
+Executives and high-level management - Executive sponsorship and a clear vision for gen AI implementation play critical roles in gen AI implementation. Ensure that gen AI initiatives align with overall business goals, receive adequate resources, and gain organization-wide support, while simultaneously empowering employees and teams to experiment.
+Mid-level managers and individual contributors (ICs) - Proximity to daily operations and end-users provides invaluable insight. Champion gen AI adoption by identifying high-impact, feasible solutions that address specific challenges within your workflows. Encourage experimentation and feedback from your teams to ensure gen AI tools are effectively integrated into existing processes, fostering increased productivity and innovation.
+
+Successful gen AI implementation requires a combination of top-down and bottom-up approaches. For both approaches, you want to be strategizing on:
+- Strategic focus
+- Exploration
+- Responsible AI
+- Resourcing
+- Impact
+- Continuous improvement
+
+Strategic focus:
+1. Executives and high-level management. 
+- Focus on a specific area where gen AI can have a significant impact. Once you have achieved success in that initial domain, expand to other areas of your business. This focused approach maximizes learning and scalability while ensuring tangible business value.
+- Prioritize use cases that are feasible to implement, actionable, affordable, and have high anticipated business value and return on investment (ROI).
+2. Mid-level managers and ICs.
+- Identify the most pressing pain points in your daily work or those you hear directly from customers. These real-world challenges are often the best starting point for finding gen AI applications that can have a significant impact.
+- Prioritize understanding user needs, their workflows, and their expectations for interacting with AI systems. A human-centered design approach is essential for ensuring that gen AI solutions meet user needs and deliver a positive experience.
+- Explore use cases in areas of the business that offer a low-risk environment for initial implementation. This allows for valuable learning and experimentation during the initial stages of adoption, enabling teams to refine processes and maximize benefits as confidence grows.
+
+Exploration:
+1. Executives and high-level management. 
+- Empower employees to experiment with gen AI and identify potential use cases. This can involve hosting hackathons or providing dedicated time and resources for exploration.
+- Foster a collaborative environment where employees can share findings, insights, and best practices for using gen AI. This leverages the expertise and creativity of individuals across the organization.
+2. Mid-level managers and ICs.
+- Experiment with different gen AI tools and applications. This practical experience will provide valuable insights into the capabilities and limitations of the technology, helping to identify promising use cases.
+- Share your findings and results with your team and colleagues. If initial experiments prove successful, consider expanding the scope of your exploration and bringing your insights to the attention of leadership.
+
+Responsible AI:
+1. Executives and high-level management.
+- Establish ethical guidelines and implement safety mechanisms to ensure that gen AI is used responsibly and securely across the organization. 
+- Institute robust data governance practices that support data security and privacy, and follow relevant regulations. Use enterprise tooling like Google Cloud Data Loss Prevention, Cloud Key Management Service, and Chronicle Security Operations to automate data discovery, classification, and de-identification, manage encryption keys, and detect and respond to security threats.
+- Implement a content moderation policy that includes employee review of AI-generated content, particularly in sensitive or high-risk applications.
+- Regularly monitor the performance and impact of gen AI systems to identify and address any unintended consequences or ethical concerns.
+2. Mid-level managers and ICs.
+- Prioritize responsible AI development and deployment by adhering to company AI standards, aligning efforts with organizational values and mitigating potential risks.
+- Think proactively about potential pitfalls and unintended consequences that might arise from gen AI implementation.
+- Conduct thorough testing and evaluation to identify and address any biases, safety concerns, or ethical issues.
+
+Resourcing:
+1. Executives and high-level management.
+- Create a robust data strategy to ensure your teams can access high-quality, relevant data that is appropriate for training and fine-tuning gen AI models.
+- Avoid reinventing the wheel by leveraging existing tools and platforms where possible.
+- Invest in developing the necessary AI talent within the organization by upskilling existing employees and hiring new talent with gen AI expertise.
+2. Mid-level managers and ICs.
+- Leverage the resources readily available within your team or department. This could include existing datasets, tools, or platforms that can be leveraged for gen AI development.
+- If your ideas or experiments require additional resources, do not hesitate to speak to leadership and make a case for the potential value and ROI of your gen AI initiatives.
+
+Impact:
+1. Executives and high-level management.
+- Set clear goals and define key performance indicators (KPIs) to measure the impact of gen AI, like increased sales or reduced customer complaints.
+- Regularly communicate the progress and impact of gen AI initiatives to stakeholders, showcasing the value generated and justifying continued investment.
+2. Mid-level managers and ICs.
+- Demonstrate the tangible impact of your gen AI experiments to gain support and drive further adoption. Quantify the achievement, whether it is increased efficiency, improved user satisfaction, or cost savings.
+- Articulate how your gen AI initiatives contribute to the organizations overall business goals and objectives to align your efforts with strategic priorities and showcase the value you are delivering.
+- Define and track KPIs that measure the effectiveness of your gen AI solutions. This data provides evidence of your impact and helps you refine your approach over time.
+
+Continuous improvement:
+1. Executives and high-level management.
+- Embrace an iterative development approach, continuously refining gen AI solutions based on feedback, performance data, and evolving business needs. 
+- Establish a regular evaluation cadence to assess the quality, accuracy, and effectiveness of gen AI outputs. Use this evaluation data to identify areas for improvement and guide future development efforts.
+- Implement mechanisms for gathering feedback from users, stakeholders, and other relevant parties to ensure gen AI systems meet user needs and expectations.
+2. Mid-level managers and ICs.
+- Perform continuous testing, measurement, and refinement based on user feedback and real-world performance data. These are essential to ensure gen AI solutions remain effective and valuable.
+- Update your gen AI solutions regularly based on new data and feedback to improve performance.
+- Continue your own gen AI education by taking courses, reading articles, and experimenting.
+
+
+
+Use gen AI to enhance or augment your strategic thinking for:
+- Critical thinking and problem solving: Gen AI can provide data and insights, but humans are still needed to interpret those insights and make informed decisions.
+- Creativity and innovation: Gen AI can assist in generating ideas and exploring possibilities, but human ingenuity is still essential for pushing boundaries and developing truly innovative solutions.
+- Relationship building and collaboration: Gen AI can facilitate communication and information sharing, but strong interpersonal skills are still crucial for building trust, fostering collaboration, and navigating complex human dynamics.
+- Strategic planning and vision: Gen AI can help with forecasting and trend analysis, but human leadership is essential for setting a long-term vision, defining goals, and charting a course for the future.
+
+Use gen AI to automate tasks that are:
+- Repetitive and rule-based: data entry, information retrieval, content formatting, and basic code generation.
+- Time-consuming and resource-intensive: research, data analysis, content summarization, and initial draft creation.
+
+Even for task automation, humans-in-the-loop are a necessary component for the gen AI implementation and continuous improvement. Use people for:
+- Data selection and preparation: ensuring that gen AI models are trained on high-quality, relevant data that is representative of the intended use cases.
+- Prompt design and refinement: crafting prompts that elicit accurate and useful responses from gen AI models.
+- Output evaluation and refinement: reviewing and editing gen AI-generated content to ensure accuracy, relevance, and alignment with brand guidelines.
+- Continuous monitoring and feedback: providing feedback on gen AI performance and identifying areas for improvement.
+
+AI Augmentation implies using machine learning and natural language processing to help make better decisions. AI systems are built to work with humans, proposing suggestions or insights but leaving the final call to the individual.
+AI Automation implies creating systems that perform tasks without needing any human intervention. Imagine bots handling repetitive tasks like processing invoices or AI-powered chatbots that deal with customer queries from start to finish. Here, AI is replacing human effort by doing the job itself.
+
+Artificial intelligence (AI): The broad field of building machines that can perform tasks requiring human intelligence.
+Machine learning (ML): A subset of AI where machines learn from data.
+Generative AI: An application of AI that creates new content.
+
+
+### Data quality ###
+1. Accuracy - If the data is inaccurate, the model will learn incorrect patterns and make faulty predictions. Imagine teaching a child about animals using a book with mislabeled pictures—they would learn the wrong things. The same applies to AI.
+2. Completeness - Completeness refers to the size of a dataset as well as representation within the dataset. The size of the dataset is important because the model needs enough to make an accurate prediction. If a meteorologist tries to predict weather only based on the data of the past day, it will be a much worse prediction than if it used a much larger sample size.
+3. Representative - Data needs to be representative and inclusive, otherwise it can lead to skewed samples and biased outcomes. If a dataset about customer preferences is missing information about a certain demographic, the model might make inaccurate or biased generalizations about that group.
+4. Consistency - Inconsistent data formats or labeling can confuse the model and hinder its ability to learn effectively. Imagine trying to assemble a puzzle where some pieces are labeled with numbers and others with letters—it would be a mess.
+5. Relevance - The data must be relevant to the task the AI is designed to perform. For example, data about traffic patterns in London is unlikely to be helpful for predicting crop yields in Kansas.
+
+
+### Data accessibility ###
+1. Availability - If the necessary data simply is not available, the AI model can not be trained. For some problems, the data might exist, but it might be locked behind paywalls or restricted due to privacy concerns.
+2. Cost - Gathering and cleaning data can be expensive. The cost of acquiring high-quality data can be a significant barrier to AI development, especially for smaller organizations.
+3. Format - Data needs to be in a format that the AI model can understand and process. Converting data into the appropriate format can be time-consuming and technically challenging.
+
+
+### Machine learning approaches and data requirements ###
+
+The quality, accessibility, and form of data are fundamental, but how that data is used for ML depends on the specific learning method. Machine learning has three primary learning approaches: supervised, unsupervised, and reinforcement learning, each with its own data requirements.
+Supervised models rely on labeled data, unsupervised models work with unlabeled data, and reinforcement learning learns through interaction and feedback.
+
+Labeled data  has tags, such as a name, type, or number. These tags, whether applied manually or by automated systems, assign meaning to the data. 
+For instance, an image dataset for training a cat-detection model would label each picture as either a cat or dog. Similarly, a set of customer reviews might be labeled as positive, negative, or neutral. These labels enable algorithms to learn relationships and make accurate predictions.
+
+Unlabeled data is simply data that is not tagged or labeled in any way. It is raw, unprocessed information without inherent meaning. 
+Examples of unlabeled data include a collection of unorganized photos, a stream of audio recordings, or website traffic logs without user categorization. In these cases, algorithms must independently discover patterns and structures within the data, as there are no pre-existing labels to guide the learning process.
+
+Supervised machine learning - trains models on labeled data, where each input is paired with its correct output, allowing the model to learn the relationship between them. The models goal is to identify patterns and relationships within this labeled data, enabling it to accurately predict outputs for new, unseen inputs.
+Predicting housing prices is a common example of supervised learning. A model is trained on a dataset where each house has labeled data, such as its size, number of bedrooms, location, and the corresponding sale price. This labeled data allows the algorithm to learn the relationship between the features of a house and its price. Once trained, the model can then predict the price of a new house based on its features.
+
+Unsupervised ML models - deal with raw, unlabeled data to find natural groupings. Instead of learning from labeled data, it dives headfirst into a sea of unlabeled data. 
+For example, an unsupervised learning algorithm could analyze customer purchase history from your companys database. It might uncover hidden segments of customers with similar buying habits, even though you never explicitly labeled those segments beforehand. This can be incredibly valuable for targeted marketing or product recommendations.
+Think of it as exploratory analysis. Unsupervised learning helps you understand the underlying structure of your data and uncover insights that you might not have even known to look for.
 
 ### Reinforcement learning ###
 
