@@ -371,3 +371,71 @@ Responsible AI means ensuring your AI applications avoid intentional and uninten
 
 **Accountability and explainability**
 1. Fairness requires accountability - Fairness requires accountability. We need to know who is responsible for the AI's actions and understand how it makes decisions. This is where explainability comes in. Explainable AI makes the decision-making processes of AI models transparent and understandable. This is crucial for building trust, debugging errors, and uncovering hidden biases. Think of it like a judge explaining their verdict; without a clear explanation, it's hard to trust the decision. Tools like Google Cloud’s Vertex Explainable AI can help understand model outputs and identify potential biases. Understanding how your application uses and interprets the AI's output is crucial for ensuring responsible use.
+
+
+---
+
+# Understanding the layers of gen AI #
+
+Think of generative AI as a powerful engine. The infrastructure is its foundation, the models are its core, and the platform connects everything together. Agents act as the drivers, making decisions and taking action, while applications are the vehicles that take us to our destination. 
+
+1. Infrastructure - The foundation of any AI system, comprising the hardware (physical servers, cloud computing resources, specialized chips like GPUs and TPUs) and software (operating systems, networking) that provide the necessary computing power, storage, and connectivity to train, deploy, and scale AI models.
+
+2. Models - The model is where the brains of the AI system reside. It comprises various algorithms that learn patterns from data and can make predictions or generate new content. Examples are large language models (LLMs) like Gemini, image recognition models, and recommendation systems.
+
+3. Platform - This is the layer that consists of tools and services that help with building and deploying AI models. This includes model training platforms like Vertex AI and data management tools.
+
+4. Agent - This layer utilizes the capabilities of the model layer to perform more complex actions. This layer interacts with the environment, gathers information and makes decisions and executes actions based on the information received.
+
+5. Gen AI powered application - This is the layer that delivers the AI capability to users through interfaces.
+
+
+---
+
+# Agents and gen AI powered applications #
+
+A gen AI agent is an application that tries to achieve a goal by observing the world and acting upon it using the tools it has at its disposal. Gen AI agents can process information, reason over complex concepts, and take actions. They can also be used in a variety of applications, including customer service, employee productivity, and creative tasks. With generative AI, you have the flexibility to leverage either pre-built agents and applications, or create custom ones tailored to your specific needs. No matter which path you choose, you can apply generative AI's capabilities in a way that best aligns with your objectives. Google Cloud tools like AI Applications help teams create AI agents using natural language rather than having to write complex code to do the same thing.
+
+Think of agents as the intelligent pieces within a larger gen AI powered application. They bring specific capabilities to the table.
+1. **Understanding and responding to natural language** - This allows applications to have more intuitive interfaces, like chatbots that can actually understand complex requests.
+2. **Automating complex tasks** - Agents can handle multi-step processes within an application, such as gathering information, making decisions based on that information, and taking action.
+3. **Personalization** - Agents can learn user preferences and tailor the application experience accordingly.
+
+Think of gen AI powered applications as the user-facing layer. They provide the structure and context for agents to operate within. They define the user interface, the overall goals, and the specific tasks that agents will help with. Often, multiple agents with different specializations work together within a single application to create a richer, more dynamic user experience. This is known as a multi-agent system. You can review some examples below.
+- **A travel booking app**: An agent could handle the complex task of finding the best flights and hotels based on user preferences, while another agent might specialize in suggesting relevant activities and attractions at the destination. Then, the application provides the user with the interface for browsing options and making reservations.
+- **A customer support app**: An agent could answer common questions, troubleshoot problems, and escalate complex issues to human representatives. The application would provide the chat interface and integrate with other support systems.
+- **A personalized learning app**: An agent could assess a student's knowledge, recommend relevant learning materials, and even generate personalized exercises. The application would provide the structure for lessons and track progress.
+
+---
+
+# Conversational and workflow agents #
+
+**Conversational agents**
+
+Conversational agents are designed to understand what you mean, not just what you say, and respond in a way that makes sense.
+- ***You provide input***: You can type a message or speak to the agent.
+- ***The agent understands***: Using powerful AI, it figures out the meaning and intention behind your words.
+- ***The agent calls a tool***: Based on your request, the agent might need to gather additional information or perform an action. This could involve searching the web, accessing a database, or interacting with another software application.
+- ***The agent generates a response***: It formulates an answer that's relevant to your request and sounds natural.
+- ***The agent delivers the response***: You'll see or hear the answer depending on how you interacted with it.
+
+Conversational agent examples.
+- ***Answering questions***: Imagine you're curious about the weather in Paris. You ask a conversational agent, "What's the weather like in Paris?" And it instantly provides you with the current temperature, forecast, and even suggests what to pack if you're traveling there.
+- ***Casual conversation***: Feeling bored? A conversational agent can engage in lighthearted banter, tell you jokes, or even discuss your favorite books and movies, just like a friend would.
+- ***Accessing information***: Need to know the capital of Australia? Or maybe you want a quick summary of the French Revolution? A conversational agent can access a vast amount of world knowledge and provide you with concise and accurate information.
+
+
+**Workflow agents**
+
+Workflow agents are designed to streamline your work and make sure things get done efficiently and correctly by automating tasks or going through complex processes.
+- **You provide input**: You define a task or trigger a process like submitting a form, uploading a file, initiating a scheduled event, or even ordering a product online.
+- **The agent understands**: The agent is the software that automates those steps. It interprets the task's requirements and defines the series of steps needed to complete the task.
+- **The agent calls a tool**: Based on the workflow's definition, the agent executes a series of actions. This could involve data transformation, file transfer, sending notifications, integrating with external systems, or initiating other automated processes using APIs.
+- **The agent generates a result/output**: It compiles the outcome of the executed actions, which might be a report, a data file, a confirmation message, or an updated status within a system.
+- **The agent delivers the result/output**: The agent delivers the output to the designated recipient(s) or system(s), such as via email, a dashboard, a database update, or a file storage location.
+
+Workflow agents examples.
+- ***Ecommerce order fulfillment***: An agent automatically processes orders, updates inventory, sends shipping notifications, and handles returns.
+- ***Customer onboarding***: An agent guides new customers through account setup, provides tutorials, and answers frequently asked questions.
+- ***Automated research***: An agent can conduct in-depth research on a given topic by autonomously browsing the web, summarizing relevant content, and generating comprehensive reports. (Try this out with Gemini Deep Research.)
+- ***Security Log Parsing***: An agent that inspects incoming security logs for abnormalities and can flag them, open a ticket, begin triage, and assign to humans for review when necessary.
