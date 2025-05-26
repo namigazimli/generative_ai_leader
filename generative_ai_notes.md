@@ -1,60 +1,77 @@
 #### Four primary ways to use Generative AI ####
+
 ### Create ###
-Using generative AI to create new content, such as: 
+
+Using generative AI to create new content, such as:
 
 Writing articles, emails, and social media posts.
-- Generate text responses to customer service inquiries using Conversational AI. 
+
+- Generate text responses to customer service inquiries using Conversational AI.
 - Draft emails to clients using Gemini in Gmail.
 
 Creating images, videos, and audio
+
 - Create a custom image for a presentation using Gemini in Google Slides.
 - Generate multiple design concepts for brainstorming marketing materials such as website pages using Imagen.
 - Create video tutorials to guide customers through troubleshooting steps using Google Vids.
 
 Generating code in various programming languages
+
 - Generate unit tests and other test cases for code, reducing the manual effort required for testing while still ensuring the code works as expected.
 - Generate code as a starting point for larger software development projects using Gemini Code Assist.
 
 ### Summarize ###
+
 Condense large amounts of information into concise summaries, such as:
 
 Summarizing long documents or articles
+
 - Summarize a lengthy financial report without having to read the entire document using NotebookLM Enterprise.
 - Summarize customer reviews to understand product feedback and sentiment using Gemini in Looker.
 
 Extracting key takeaways from meetings or presentations
+
 - Project managers can automatically generate meeting notes that highlight key decisions and action items using Gemini in Google Meet.
 - Sales teams can use summaries to quickly recap client calls and identify next steps.
 
 Creating concise reports from complex data
+
 - Transform complex data into easily understandable visuals like graphs using Gemini in BigQuery.
 
 ### Discover ###
+
 Help your customers and employees find what they need at the right time, such as:
 
 Uncovering hidden patterns and insights in data
+
 - Analyze purchase history and website traffic to predict future demand and optimize inventory using forecasting models on Vertex AI.
 - Identify viewing patterns of streaming viewers to recommend personalized content to subscribers, increasing engagement and reducing churn using Vertex AI Search.
 - Analyze vast datasets of molecular structures to identify potential drug candidates with higher success rates by fine-tuning models on Vertex AI.
 
-Searching for resources or documents 
+Searching for resources or documents
+
 - Search for a file or ask questions about its contents using Gemini in Google Drive.
 - Unlock enterprise expertise for employees with agents that bring together Gemini’s advanced reasoning, Google-quality search, and enterprise data, regardless of where it’s hosted using Google Agentspace.
 
 Monitoring real-time events
+
 - Use anomaly detection to identify fraudulent transactions and prevent financial losses.
 
-### Automate ### 
+### Automate ###
+
 Automate tasks that previously required human intervention, such as:
 
 Automated format conversation
+
 - Convert content to accessible formats in real time by using Google Cloud's APIs, like Text-to-Speech, Speech-to-Text, Translation, and more.
 
 Automated documentation
-- Analyze code and automatically generate clear and concise documentation, saving developers time and ensuring consistency using Codey. 
+
+- Analyze code and automatically generate clear and concise documentation, saving developers time and ensuring consistency using Codey.
 - Automate contract review and information extraction with Document AI.
 
 Automated notifications and alarms
+
 - Automate customer feedback analysis and ticket creation.
 
 Multimodal GenAI - Gen AI can process and integrate information from diverse formats like plain text, images, videos, audio, and PDFs. This capability–known as multimodal gen AI–means that models can process various input types individually or combine multiple kinds of data simultaneously.
@@ -77,6 +94,7 @@ Executives and high-level management - Executive sponsorship and a clear vision 
 Mid-level managers and individual contributors (ICs) - Proximity to daily operations and end-users provides invaluable insight. Champion gen AI adoption by identifying high-impact, feasible solutions that address specific challenges within your workflows. Encourage experimentation and feedback from your teams to ensure gen AI tools are effectively integrated into existing processes, fostering increased productivity and innovation.
 
 Successful gen AI implementation requires a combination of top-down and bottom-up approaches. For both approaches, you want to be strategizing on:
+
 - Strategic focus
 - Exploration
 - Responsible AI
@@ -85,74 +103,99 @@ Successful gen AI implementation requires a combination of top-down and bottom-u
 - Continuous improvement
 
 Strategic focus:
-1. Executives and high-level management. 
+
+1. Executives and high-level management.
+
 - Focus on a specific area where gen AI can have a significant impact. Once you have achieved success in that initial domain, expand to other areas of your business. This focused approach maximizes learning and scalability while ensuring tangible business value.
 - Prioritize use cases that are feasible to implement, actionable, affordable, and have high anticipated business value and return on investment (ROI).
+
 2. Mid-level managers and ICs.
+
 - Identify the most pressing pain points in your daily work or those you hear directly from customers. These real-world challenges are often the best starting point for finding gen AI applications that can have a significant impact.
 - Prioritize understanding user needs, their workflows, and their expectations for interacting with AI systems. A human-centered design approach is essential for ensuring that gen AI solutions meet user needs and deliver a positive experience.
 - Explore use cases in areas of the business that offer a low-risk environment for initial implementation. This allows for valuable learning and experimentation during the initial stages of adoption, enabling teams to refine processes and maximize benefits as confidence grows.
 
 Exploration:
-1. Executives and high-level management. 
+
+1. Executives and high-level management.
+
 - Empower employees to experiment with gen AI and identify potential use cases. This can involve hosting hackathons or providing dedicated time and resources for exploration.
 - Foster a collaborative environment where employees can share findings, insights, and best practices for using gen AI. This leverages the expertise and creativity of individuals across the organization.
+
 2. Mid-level managers and ICs.
+
 - Experiment with different gen AI tools and applications. This practical experience will provide valuable insights into the capabilities and limitations of the technology, helping to identify promising use cases.
 - Share your findings and results with your team and colleagues. If initial experiments prove successful, consider expanding the scope of your exploration and bringing your insights to the attention of leadership.
 
 Responsible AI:
+
 1. Executives and high-level management.
-- Establish ethical guidelines and implement safety mechanisms to ensure that gen AI is used responsibly and securely across the organization. 
+
+- Establish ethical guidelines and implement safety mechanisms to ensure that gen AI is used responsibly and securely across the organization.
 - Institute robust data governance practices that support data security and privacy, and follow relevant regulations. Use enterprise tooling like Google Cloud Data Loss Prevention, Cloud Key Management Service, and Chronicle Security Operations to automate data discovery, classification, and de-identification, manage encryption keys, and detect and respond to security threats.
 - Implement a content moderation policy that includes employee review of AI-generated content, particularly in sensitive or high-risk applications.
 - Regularly monitor the performance and impact of gen AI systems to identify and address any unintended consequences or ethical concerns.
+
 2. Mid-level managers and ICs.
+
 - Prioritize responsible AI development and deployment by adhering to company AI standards, aligning efforts with organizational values and mitigating potential risks.
 - Think proactively about potential pitfalls and unintended consequences that might arise from gen AI implementation.
 - Conduct thorough testing and evaluation to identify and address any biases, safety concerns, or ethical issues.
 
 Resourcing:
+
 1. Executives and high-level management.
+
 - Create a robust data strategy to ensure your teams can access high-quality, relevant data that is appropriate for training and fine-tuning gen AI models.
 - Avoid reinventing the wheel by leveraging existing tools and platforms where possible.
 - Invest in developing the necessary AI talent within the organization by upskilling existing employees and hiring new talent with gen AI expertise.
+
 2. Mid-level managers and ICs.
+
 - Leverage the resources readily available within your team or department. This could include existing datasets, tools, or platforms that can be leveraged for gen AI development.
 - If your ideas or experiments require additional resources, do not hesitate to speak to leadership and make a case for the potential value and ROI of your gen AI initiatives.
 
 Impact:
+
 1. Executives and high-level management.
+
 - Set clear goals and define key performance indicators (KPIs) to measure the impact of gen AI, like increased sales or reduced customer complaints.
 - Regularly communicate the progress and impact of gen AI initiatives to stakeholders, showcasing the value generated and justifying continued investment.
+
 2. Mid-level managers and ICs.
+
 - Demonstrate the tangible impact of your gen AI experiments to gain support and drive further adoption. Quantify the achievement, whether it is increased efficiency, improved user satisfaction, or cost savings.
 - Articulate how your gen AI initiatives contribute to the organizations overall business goals and objectives to align your efforts with strategic priorities and showcase the value you are delivering.
 - Define and track KPIs that measure the effectiveness of your gen AI solutions. This data provides evidence of your impact and helps you refine your approach over time.
 
 Continuous improvement:
+
 1. Executives and high-level management.
-- Embrace an iterative development approach, continuously refining gen AI solutions based on feedback, performance data, and evolving business needs. 
+
+- Embrace an iterative development approach, continuously refining gen AI solutions based on feedback, performance data, and evolving business needs.
 - Establish a regular evaluation cadence to assess the quality, accuracy, and effectiveness of gen AI outputs. Use this evaluation data to identify areas for improvement and guide future development efforts.
 - Implement mechanisms for gathering feedback from users, stakeholders, and other relevant parties to ensure gen AI systems meet user needs and expectations.
+
 2. Mid-level managers and ICs.
+
 - Perform continuous testing, measurement, and refinement based on user feedback and real-world performance data. These are essential to ensure gen AI solutions remain effective and valuable.
 - Update your gen AI solutions regularly based on new data and feedback to improve performance.
 - Continue your own gen AI education by taking courses, reading articles, and experimenting.
 
-
-
 Use gen AI to enhance or augment your strategic thinking for:
+
 - Critical thinking and problem solving: Gen AI can provide data and insights, but humans are still needed to interpret those insights and make informed decisions.
 - Creativity and innovation: Gen AI can assist in generating ideas and exploring possibilities, but human ingenuity is still essential for pushing boundaries and developing truly innovative solutions.
 - Relationship building and collaboration: Gen AI can facilitate communication and information sharing, but strong interpersonal skills are still crucial for building trust, fostering collaboration, and navigating complex human dynamics.
 - Strategic planning and vision: Gen AI can help with forecasting and trend analysis, but human leadership is essential for setting a long-term vision, defining goals, and charting a course for the future.
 
 Use gen AI to automate tasks that are:
+
 - Repetitive and rule-based: data entry, information retrieval, content formatting, and basic code generation.
 - Time-consuming and resource-intensive: research, data analysis, content summarization, and initial draft creation.
 
 Even for task automation, humans-in-the-loop are a necessary component for the gen AI implementation and continuous improvement. Use people for:
+
 - Data selection and preparation: ensuring that gen AI models are trained on high-quality, relevant data that is representative of the intended use cases.
 - Prompt design and refinement: crafting prompts that elicit accurate and useful responses from gen AI models.
 - Output evaluation and refinement: reviewing and editing gen AI-generated content to ensure accuracy, relevance, and alignment with brand guidelines.
@@ -165,16 +208,16 @@ Artificial intelligence (AI): The broad field of building machines that can perf
 Machine learning (ML): A subset of AI where machines learn from data.
 Generative AI: An application of AI that creates new content.
 
-
 ### Data quality ###
+
 1. Accuracy - If the data is inaccurate, the model will learn incorrect patterns and make faulty predictions. Imagine teaching a child about animals using a book with mislabeled pictures—they would learn the wrong things. The same applies to AI.
 2. Completeness - Completeness refers to the size of a dataset as well as representation within the dataset. The size of the dataset is important because the model needs enough to make an accurate prediction. If a meteorologist tries to predict weather only based on the data of the past day, it will be a much worse prediction than if it used a much larger sample size.
 3. Representative - Data needs to be representative and inclusive, otherwise it can lead to skewed samples and biased outcomes. If a dataset about customer preferences is missing information about a certain demographic, the model might make inaccurate or biased generalizations about that group.
 4. Consistency - Inconsistent data formats or labeling can confuse the model and hinder its ability to learn effectively. Imagine trying to assemble a puzzle where some pieces are labeled with numbers and others with letters—it would be a mess.
 5. Relevance - The data must be relevant to the task the AI is designed to perform. For example, data about traffic patterns in London is unlikely to be helpful for predicting crop yields in Kansas.
 
-
 ### Data accessibility ###
+
 1. Availability - If the necessary data simply is not available, the AI model can not be trained. For some problems, the data might exist, but it might be locked behind paywalls or restricted due to privacy concerns.
 2. Cost - Gathering and cleaning data can be expensive. The cost of acquiring high-quality data can be a significant barrier to AI development, especially for smaller organizations.
 3. Format - Data needs to be in a format that the AI model can understand and process. Converting data into the appropriate format can be time-consuming and technically challenging.
@@ -186,16 +229,16 @@ Generative AI: An application of AI that creates new content.
 The quality, accessibility, and form of data are fundamental, but how that data is used for ML depends on the specific learning method. Machine learning has three primary learning approaches: supervised, unsupervised, and reinforcement learning, each with its own data requirements.
 Supervised models rely on labeled data, unsupervised models work with unlabeled data, and reinforcement learning learns through interaction and feedback.
 
-Labeled data  has tags, such as a name, type, or number. These tags, whether applied manually or by automated systems, assign meaning to the data. 
+Labeled data  has tags, such as a name, type, or number. These tags, whether applied manually or by automated systems, assign meaning to the data.
 For instance, an image dataset for training a cat-detection model would label each picture as either a cat or dog. Similarly, a set of customer reviews might be labeled as positive, negative, or neutral. These labels enable algorithms to learn relationships and make accurate predictions.
 
-Unlabeled data is simply data that is not tagged or labeled in any way. It is raw, unprocessed information without inherent meaning. 
+Unlabeled data is simply data that is not tagged or labeled in any way. It is raw, unprocessed information without inherent meaning.
 Examples of unlabeled data include a collection of unorganized photos, a stream of audio recordings, or website traffic logs without user categorization. In these cases, algorithms must independently discover patterns and structures within the data, as there are no pre-existing labels to guide the learning process.
 
 Supervised machine learning - trains models on labeled data, where each input is paired with its correct output, allowing the model to learn the relationship between them. The models goal is to identify patterns and relationships within this labeled data, enabling it to accurately predict outputs for new, unseen inputs.
 Predicting housing prices is a common example of supervised learning. A model is trained on a dataset where each house has labeled data, such as its size, number of bedrooms, location, and the corresponding sale price. This labeled data allows the algorithm to learn the relationship between the features of a house and its price. Once trained, the model can then predict the price of a new house based on its features.
 
-Unsupervised ML models - deal with raw, unlabeled data to find natural groupings. Instead of learning from labeled data, it dives headfirst into a sea of unlabeled data. 
+Unsupervised ML models - deal with raw, unlabeled data to find natural groupings. Instead of learning from labeled data, it dives headfirst into a sea of unlabeled data.
 For example, an unsupervised learning algorithm could analyze customer purchase history from your companys database. It might uncover hidden segments of customers with similar buying habits, even though you never explicitly labeled those segments beforehand. This can be incredibly valuable for targeted marketing or product recommendations.
 Think of it as exploratory analysis. Unsupervised learning helps you understand the underlying structure of your data and uncover insights that you might not have even known to look for.
 
@@ -213,24 +256,27 @@ Reinforcement learning is all about learning through interaction and feedback. I
 
 ### Data tools and management for ML workloads ###
 
-Google Cloud offers a comprehensive suite of data tools and management capabilities tailored for ML workloads. These tools and capabilities are designed to support the entire ML lifecycle, from data preparation and model training to deployment and monitoring. 
+Google Cloud offers a comprehensive suite of data tools and management capabilities tailored for ML workloads. These tools and capabilities are designed to support the entire ML lifecycle, from data preparation and model training to deployment and monitoring.
 
-1. Gather the data - Data gathering, also called data ingestion, involves collecting raw data from various sources. To effectively train and test your model, determine the data you need based on the outcome you want to achieve. Google Cloud supports data ingestion through several tools. 
+1. Gather the data - Data gathering, also called data ingestion, involves collecting raw data from various sources. To effectively train and test your model, determine the data you need based on the outcome you want to achieve. Google Cloud supports data ingestion through several tools.
+
 - Pub/Sub handles real-time streaming data processing, regardless of the structure of the data.
 - Cloud Storage is well-suited for storing unstructured data.
 - Cloud SQL and Cloud Spanner are used to manage structured data.
 
-2. Prepare your data - Data preparation is the process of cleaning and transforming raw data into a usable format for analysis or model training. This involves formatting and labeling data properly. Google Cloud offers tools like BigQuery for data analysis and Data Catalog for data governance. These tools help prepare data for ML models. 
-- With BigQuery, you can filter data, correct its inconsistencies, and handle missing values. 
+2. Prepare your data - Data preparation is the process of cleaning and transforming raw data into a usable format for analysis or model training. This involves formatting and labeling data properly. Google Cloud offers tools like BigQuery for data analysis and Data Catalog for data governance. These tools help prepare data for ML models.
+
+- With BigQuery, you can filter data, correct its inconsistencies, and handle missing values.
 - With Data Catalog, you can find relevant data for your ML projects. This tool provides a centralized repository to easily discover datasets in your organization.
 
-3. Train your model - The process of creating your ML model using data is called model training. Google Cloud's Vertex AI platform provides a managed environment for training ML models. 
+3. Train your model - The process of creating your ML model using data is called model training. Google Cloud's Vertex AI platform provides a managed environment for training ML models.
 With Vertex AI, you can set parameters and build your model, using prebuilt containers for popular machine learning frameworks, custom training jobs, and tools for model evaluation. Vertex AI also provides access to powerful computing resources to make the model training process faster.
 
-4. Deploy and predict - Model deployment is the process of making a trained model available for use. 
+4. Deploy and predict - Model deployment is the process of making a trained model available for use.
 Vertex AI simplifies this by providing tools to put the model into action for generating predictions. This includes scaling the deployment, which means adjusting the resources allocated to the model to handle varying amounts of usage.
 
 5. Manage your model - Model management is the process of managing and maintaining your models over time. Google Cloud offers tools for managing the entire lifecycle of ML models. This includes the following.
+
 - Versioning: Keep track of different versions of the model.
 - Performance tracking: Review the model metrics to check the model's performance.
 - Drift monitoring: Watch for changes in the model's accuracy over time.
@@ -248,10 +294,9 @@ A broad field that encompasses many different techniques, one of which is deep l
 
 Remember foundation models from course one? Foundation models use deep learning. They are trained on massive datasets that allow them to learn complex patterns and perform a variety of tasks across different domains. They are incredibly powerful machine learning models trained on a massive scale, often using vast amounts of unlabeled data. This training allows them to develop a broad understanding of the world, capturing intricate patterns and relationships within the data they consume. Think of a foundation model as a highly advanced learner. It's like a student who has read everything in an entire library, absorbing knowledge from countless books, articles, and websites. This deep and extensive learning allows foundation models to be adapted to a wide range of tasks.
 
-Large Language Models (LLMs) - One particularly exciting type of foundation model is the LLM. These models are specifically designed to understand and generate human language. They can translate languages, write different kinds of creative content, and answer your questions in an informative way, even if they are open ended, challenging, or strange. This is likely the most common foundation model you've encountered, such as in popular generative AI chatbots like Gemini. They also help power many search engines you use today. 
+Large Language Models (LLMs) - One particularly exciting type of foundation model is the LLM. These models are specifically designed to understand and generate human language. They can translate languages, write different kinds of creative content, and answer your questions in an informative way, even if they are open ended, challenging, or strange. This is likely the most common foundation model you've encountered, such as in popular generative AI chatbots like Gemini. They also help power many search engines you use today.
 
 Diffusion models - Diffusion models are another type of foundational model. They excel in generating high-quality images, audio, and even video by iteratively refining noise (or unstructured/random data and patterns) into structured data.
-
 
 ### Factors when choosing a model for your use case ###
 
@@ -275,7 +320,7 @@ Diffusion models - Diffusion models are another type of foundational model. They
 
 # Google Cloud's ML models #
 
-**Vertex AI** streamlines the integration of advanced artificial intelligence capabilities into business applications, allowing for seamless discovery, deployment, and customization. These models empower businesses to leverage cutting-edge AI, providing the flexibility to work with many different models without the need for extensive in-house model development. 
+**Vertex AI** streamlines the integration of advanced artificial intelligence capabilities into business applications, allowing for seamless discovery, deployment, and customization. These models empower businesses to leverage cutting-edge AI, providing the flexibility to work with many different models without the need for extensive in-house model development.
 With Vertex AI you can access models developed by Google including Gemini, Gemma, Imagen, and Veo. You can also access proprietary third-party models, and openly available models.
 
 **Gemini** - Gemini, a multimodal model, can understand and operate across diverse data formats, such as text, images, audio, and video. Gemini's multimodal design supports applications that require complex multimodal understanding, advanced conversational AI, content creation, and nuanced question answering.
@@ -296,15 +341,15 @@ Collectively, these Google Cloud foundation models empower businesses to enhance
 
 1. **Data dependency** - The performance of foundation models is heavily data-dependent. They require large datasets, and any biases or incompleteness in that data will inevitably seep into their outputs. It's like asking a student to write an essay on a book they haven't read. If the data or questions are inaccurate or biased, the AI's performance will suffer.
 
-2. **Knowledge cutoff** - Knowledge cutoff is the last date that an AI model was trained on new information. Models with older knowledge cutoffs may not know about recent events or discoveries. This can lead to incorrect or outdated answers, since AI models don't automatically update with the latest happenings around the world. For example, if an AI tool's last training date was in 2022, it wouldn't be able to provide information about events or information that happened after 2022. 
+2. **Knowledge cutoff** - Knowledge cutoff is the last date that an AI model was trained on new information. Models with older knowledge cutoffs may not know about recent events or discoveries. This can lead to incorrect or outdated answers, since AI models don't automatically update with the latest happenings around the world. For example, if an AI tool's last training date was in 2022, it wouldn't be able to provide information about events or information that happened after 2022.
 
 3. **Bias** - An LLM learns from large amounts of data, which may contain biases. You can think of bias as an unbalanced dataset in LLMs. Due to their statistical learning nature, they can sometimes amplify existing biases present in the data. Even subtle biases in the training data can be magnified in the model's outputs.
 
 4. **Fairness** - Even with perfectly balanced data, defining what constitutes fairness in an LLM's output is a complex task. Fairness can be interpreted in various ways. Fairness assessments for generative AI models, while valuable, have inherent limitations. These evaluations typically focus on specific categories of bias, potentially overlooking other forms of prejudice. Consequently, these benchmarks do not provide a complete picture of all potential risks associated with the models' outputs, highlighting the ongoing challenge of achieving truly equitable AI.
 
-5. **Hallucinations** - Foundation models can sometimes experience hallucinations, which means they produce outputs that aren't accurate or based on real information. Because foundation models can't verify information against external sources, they may generate factually incorrect or nonsensical responses. These cause significant concern in accuracy-critical applications. The responses might sound convincing, but they are completely wrong. 
+5. **Hallucinations** - Foundation models can sometimes experience hallucinations, which means they produce outputs that aren't accurate or based on real information. Because foundation models can't verify information against external sources, they may generate factually incorrect or nonsensical responses. These cause significant concern in accuracy-critical applications. The responses might sound convincing, but they are completely wrong.
 
-6. **Edge cases** - Rare and atypical scenarios can expose a model's weaknesses, leading to errors, misinterpretations, and unexpected results. 
+6. **Edge cases** - Rare and atypical scenarios can expose a model's weaknesses, leading to errors, misinterpretations, and unexpected results.
 
 ## Techniques to overcome limitations ##
 
@@ -315,10 +360,10 @@ Collectively, these Google Cloud foundation models empower businesses to enhance
 3. **Prompt engineering** - Prompting offers the most rapid and straightforward approach to supplying supplementary background information to models. This involves crafting precise prompts to guide the model towards desired outputs. It refines results by understanding the factors that influence a model's responses. However, prompting is limited by the model's existing knowledge; it can't conjure information it hasn't learned.
 
 4. **Fine-tuning** - When prompt engineering doesn't deliver the desired outcomes, fine-tuning can enhance your model's performance. Pre-trained models are powerful, but they're designed for general purposes. Tuning helps them excel in specific areas. This process is particularly useful for specific tasks or when you need to enforce specific output formats, especially if you have examples of the desired output. Tuning involves further training a pre-trained or foundation model on a new dataset specific to your task. This process adjusts the model's parameters, making it more specialized for your needs. Google Cloud Vertex AI provides tooling to facilitate tuning. Here are some examples of how tuning can be used:
+
 - Fine-tuning a language model to generate creative content in a specific style.
 - Fine-tuning a code generation model to generate code in a particular programming language.
 - Fine-tuning a translation model to translate between specific languages or domains.
-
 
 ### Humans in the loop (HITL) ###
 
@@ -365,19 +410,20 @@ Responsible AI means ensuring your AI applications avoid intentional and uninten
 **Privacy in the age of AI** - Protecting privacy often involves anonymizing or pseudonymizing data, ensuring individuals can't be easily identified. AI models can sometimes inadvertently leak sensitive information from their training data, so it's crucial to implement safeguards to prevent this.
 
 **Data quality, bias, and fairness**
+
 1. Ethical AI requires high quality data - Machine learning and generative AI applications are fundamentally based on data. Therefore, responsible AI requires high-quality data. Inaccurate or incomplete data can lead to biased outcomes. Remember, technology often reflects existing societal biases. Without careful consideration, AI can amplify these biases, leading to unfair and discriminatory results. Beyond data quality, it's crucial to consider the responsible use of the data itself. Was it collected consensually? Could it perpetuate harmful biases?
 
 2. Understanding and mitigating bias - AI systems are not independent of the world they are built in. They can inherit and amplify existing societal biases. This can lead to unfair outcomes, such as a resume-screening tool that favors a certain demographic of candidates due to historical biases in hiring data. It's like training a dog with biased commands; the dog will learn and replicate those biases. To counter this, fairness must be a core principle in AI development.
 
 **Accountability and explainability**
-1. Fairness requires accountability - Fairness requires accountability. We need to know who is responsible for the AI's actions and understand how it makes decisions. This is where explainability comes in. Explainable AI makes the decision-making processes of AI models transparent and understandable. This is crucial for building trust, debugging errors, and uncovering hidden biases. Think of it like a judge explaining their verdict; without a clear explanation, it's hard to trust the decision. Tools like Google Cloud’s Vertex Explainable AI can help understand model outputs and identify potential biases. Understanding how your application uses and interprets the AI's output is crucial for ensuring responsible use.
 
+1. Fairness requires accountability - Fairness requires accountability. We need to know who is responsible for the AI's actions and understand how it makes decisions. This is where explainability comes in. Explainable AI makes the decision-making processes of AI models transparent and understandable. This is crucial for building trust, debugging errors, and uncovering hidden biases. Think of it like a judge explaining their verdict; without a clear explanation, it's hard to trust the decision. Tools like Google Cloud’s Vertex Explainable AI can help understand model outputs and identify potential biases. Understanding how your application uses and interprets the AI's output is crucial for ensuring responsible use.
 
 ---
 
 # Understanding the layers of gen AI #
 
-Think of generative AI as a powerful engine. The infrastructure is its foundation, the models are its core, and the platform connects everything together. Agents act as the drivers, making decisions and taking action, while applications are the vehicles that take us to our destination. 
+Think of generative AI as a powerful engine. The infrastructure is its foundation, the models are its core, and the platform connects everything together. Agents act as the drivers, making decisions and taking action, while applications are the vehicles that take us to our destination.
 
 1. Infrastructure - The foundation of any AI system, comprising the hardware (physical servers, cloud computing resources, specialized chips like GPUs and TPUs) and software (operating systems, networking) that provide the necessary computing power, storage, and connectivity to train, deploy, and scale AI models.
 
@@ -389,7 +435,6 @@ Think of generative AI as a powerful engine. The infrastructure is its foundatio
 
 5. Gen AI powered application - This is the layer that delivers the AI capability to users through interfaces.
 
-
 ---
 
 # Agents and gen AI powered applications #
@@ -397,11 +442,13 @@ Think of generative AI as a powerful engine. The infrastructure is its foundatio
 A gen AI agent is an application that tries to achieve a goal by observing the world and acting upon it using the tools it has at its disposal. Gen AI agents can process information, reason over complex concepts, and take actions. They can also be used in a variety of applications, including customer service, employee productivity, and creative tasks. With generative AI, you have the flexibility to leverage either pre-built agents and applications, or create custom ones tailored to your specific needs. No matter which path you choose, you can apply generative AI's capabilities in a way that best aligns with your objectives. Google Cloud tools like AI Applications help teams create AI agents using natural language rather than having to write complex code to do the same thing.
 
 Think of agents as the intelligent pieces within a larger gen AI powered application. They bring specific capabilities to the table.
+
 1. **Understanding and responding to natural language** - This allows applications to have more intuitive interfaces, like chatbots that can actually understand complex requests.
 2. **Automating complex tasks** - Agents can handle multi-step processes within an application, such as gathering information, making decisions based on that information, and taking action.
 3. **Personalization** - Agents can learn user preferences and tailor the application experience accordingly.
 
 Think of gen AI powered applications as the user-facing layer. They provide the structure and context for agents to operate within. They define the user interface, the overall goals, and the specific tasks that agents will help with. Often, multiple agents with different specializations work together within a single application to create a richer, more dynamic user experience. This is known as a multi-agent system. You can review some examples below.
+
 - **A travel booking app**: An agent could handle the complex task of finding the best flights and hotels based on user preferences, while another agent might specialize in suggesting relevant activities and attractions at the destination. Then, the application provides the user with the interface for browsing options and making reservations.
 - **A customer support app**: An agent could answer common questions, troubleshoot problems, and escalate complex issues to human representatives. The application would provide the chat interface and integrate with other support systems.
 - **A personalized learning app**: An agent could assess a student's knowledge, recommend relevant learning materials, and even generate personalized exercises. The application would provide the structure for lessons and track progress.
@@ -413,6 +460,7 @@ Think of gen AI powered applications as the user-facing layer. They provide the 
 **Conversational agents**
 
 Conversational agents are designed to understand what you mean, not just what you say, and respond in a way that makes sense.
+
 - ***You provide input***: You can type a message or speak to the agent.
 - ***The agent understands***: Using powerful AI, it figures out the meaning and intention behind your words.
 - ***The agent calls a tool***: Based on your request, the agent might need to gather additional information or perform an action. This could involve searching the web, accessing a database, or interacting with another software application.
@@ -420,14 +468,15 @@ Conversational agents are designed to understand what you mean, not just what yo
 - ***The agent delivers the response***: You'll see or hear the answer depending on how you interacted with it.
 
 Conversational agent examples.
+
 - ***Answering questions***: Imagine you're curious about the weather in Paris. You ask a conversational agent, "What's the weather like in Paris?" And it instantly provides you with the current temperature, forecast, and even suggests what to pack if you're traveling there.
 - ***Casual conversation***: Feeling bored? A conversational agent can engage in lighthearted banter, tell you jokes, or even discuss your favorite books and movies, just like a friend would.
 - ***Accessing information***: Need to know the capital of Australia? Or maybe you want a quick summary of the French Revolution? A conversational agent can access a vast amount of world knowledge and provide you with concise and accurate information.
 
-
 **Workflow agents**
 
 Workflow agents are designed to streamline your work and make sure things get done efficiently and correctly by automating tasks or going through complex processes.
+
 - **You provide input**: You define a task or trigger a process like submitting a form, uploading a file, initiating a scheduled event, or even ordering a product online.
 - **The agent understands**: The agent is the software that automates those steps. It interprets the task's requirements and defines the series of steps needed to complete the task.
 - **The agent calls a tool**: Based on the workflow's definition, the agent executes a series of actions. This could involve data transformation, file transfer, sending notifications, integrating with external systems, or initiating other automated processes using APIs.
@@ -435,7 +484,62 @@ Workflow agents are designed to streamline your work and make sure things get do
 - **The agent delivers the result/output**: The agent delivers the output to the designated recipient(s) or system(s), such as via email, a dashboard, a database update, or a file storage location.
 
 Workflow agents examples.
+
 - ***Ecommerce order fulfillment***: An agent automatically processes orders, updates inventory, sends shipping notifications, and handles returns.
 - ***Customer onboarding***: An agent guides new customers through account setup, provides tutorials, and answers frequently asked questions.
 - ***Automated research***: An agent can conduct in-depth research on a given topic by autonomously browsing the web, summarizing relevant content, and generating comprehensive reports. (Try this out with Gemini Deep Research.)
 - ***Security Log Parsing***: An agent that inspects incoming security logs for abnormalities and can flag them, open a ticket, begin triage, and assign to humans for review when necessary.
+
+---
+
+## Platform layer ##
+
+# Key features and benefits of Vertex AI
+
+The platform layer provides the foundation for building and scaling your AI initiatives. Vertex AI is Google Cloud's unified machine learning (ML) platform designed to streamline the entire ML workflow. It provides the infrastructure, tools, and pre-trained models you need to build, deploy, and manage your ML and generative AI solutions.
+
+1. Open and flexible - Vertex AI supports open frameworks, allowing you to use your preferred tools and models without vendor lock-in.
+2. Powerful infrastructure - Leverage Google Cloud's scalable and reliable infrastructure to handle your ML workloads.
+3. Pre-trained models - Choose from a wide variety of pre-trained models or build your own.
+4. Comprehensive tooling - Develop, deploy, and manage your models with ease using Vertex AI's integrated tools.
+5. Customization - Fine-tune and adapt models to your specific needs using the built-in IDE.
+6. Easy integration - Integrate your models into applications seamlessly using available APIs.
+
+# MLOps for efficient workflows
+
+Operationalizing model training can be challenging and involves thinking about infrastructure and security. By using Vertex AI, you get a fully managed compute infrastructure, high-performance ML optimized training jobs, distributed training, hyperparameter optimization, and enterprise security. Vertex AI also includes ML operations (MLOps) tools built in to help you orchestrate end-to-end ML workflows, perform feature engineering, run experiments, manage and iterate your models, track ML metadata, and monitor and evaluate model quality. MLOps helps automate, standardize, and manage the ML project lifecycle, enabling better collaboration and continuous improvement.
+
+- **Featura store**: Share, serve, and reuse ML features to maintain consistency and efficiency.
+- **Model registry**: Manage model versions, track changes, and organize your models throughout their lifecycle.
+- **Model evaluation**: Quickly evaluate and compare model performance to identify the best model for your use case.
+- **Workflow orchestration**: Automate ML workflows, from data preprocessing to deployment, using Vertex AI Pipelines.
+- **Model monitoring**: Monitor models for performance degradation, detect input skew and drift, and trigger updates or retraining.
+
+---
+
+## Model layer ##
+
+At the heart of every AI and machine learning system lies the model. Think of it as the brain of the operation. These aren't just any algorithms. They're sophisticated mathematical structures trained on massive amounts of data. This training process allows them to learn patterns and relationships, ultimately enabling them to perform a wide range of tasks, such as generating content, analyzing data, and classifying information.
+Within the Vertex AI platform, you have multiple options for how to handle AI models for your project. You can choose to build a model from scratch or use an existing model.
+
+**Use models with Model Garden** - Within the Vertex AI platform, you have multiple options for how to handle AI models for your project. You can choose to build a model from scratch or use an existing model. Model Garden gives you options to pick from over 160 models and offers options of Google models, third-party models, and open-source models. With Vertex AI, you can customize these models with your own data and deploy them to your custom applications. Additionally, some pre-trained models can be used out-of-the-box without tuning.
+
+1. **First-party foundation models** - Leverage state-of-the-art models from Google including Gemini models and task-specific models for image generation, speech-to-text, and more.
+- **Gemini Pro**, Flash, and more.
+- **Imagen** for text-to-image.
+- **Veo** for text-to-video and image-to-video.
+- **Chirp** 2.0 for speech-to-text.
+2. **First-party pre-trained APIs** - Build and deploy AI applications faster with our pre-trained APIs powered by the best Google AI research and technology.
+3. **Open models** - Access a variety of enterprise-ready open models.
+4. **Third-party models** - Model Garden supports third-party models from partners with foundation models.
+
+# Build models with Vertex AI #
+
+With Vertex AI, you have two options for training and using your own models. You can go fully custom and create and train models at scale using any ML framework (PyTorch, TensorFlow, scikit-learn, or XGBoost), or you can use AutoML to create and train models with minimal technical knowledge and effort. AutoML allows you to build these types of models:
+
+| Data type     | Supported objectives                                  |
+| :---          |                                                   ---:|
+| Image data    | Classification, object detection.                     |
+| Video data    | Action recognition, classification, object tracking.  |
+| Text data     | Classification, entity extraction, sentiment analysis.|
+| Tabular data  | Classification/regression, forecasting.               |
