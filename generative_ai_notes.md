@@ -589,9 +589,9 @@ Imagine a drone navigating a complex environment. It needs to react instantly to
 
 **Gemini Nano** is Google's most efficient and compact AI model, specifically designed to run on the edge on devices like smartphones and embedded systems. It's part of the larger Gemini family of models. Think of Gemini Nano as a miniature version of the powerful AI that usually lives in Google's data centers. This "on-device" or edge approach offers several benefits. 
 
-**Privacy** - Your data stays on your device, enhancing your privacy.
-**Speed** - You get fast responses since there's no need to send data to the cloud.
-**Offline access** - Gemini Nano can work even without an internet connection.
+- **Privacy**: Your data stays on your device, enhancing your privacy.
+- **Speed**: You get fast responses since there's no need to send data to the cloud.
+- **Offline access**: Gemini Nano can work even without an internet connection.
 
 Gemini Nano brings the power of AI directly to your devices, making them smarter, more helpful, and more privacy-focused. It is currently being integrated into various Google products and services, including:
 - Pixel phones: Gemini Nano powers features like Call Notes, which summarizes phone conversations and Pixel Recorder, which summarizes voice recordings.
@@ -612,9 +612,9 @@ Google provides the tools to deploy your AI models in these different locations,
 
 It is important to understand the resources you have available to build out your solution. Let’s dig deeper into some of the roles and responsibilities at each layer of the stack. The AI stack is designed to support different roles with specific needs. Before jumping into building out a solution, ensure you have the proper expertise and talent for what you want to build. Business users can improve their tasks, developers can build custom AI solutions, and AI practitioners can develop and deploy advanced AI models responsibly and securely. This collaborative ecosystem allows your organization to leverage the full potential of AI across various business functions.
 
-**Business leaders** - Business leaders typically interact with pre-built gen AI solutions to enhance daily operations and improve customer experiences. For example, Gemini for Google Workspace can be used for content creation, data analysis, and document summarization.
-**Developers** - Developers in your organization are responsible for building and deploying custom AI agents and integrating AI capabilities into existing applications. They can use AI Applications for custom agent creation, AI code generation, and AI-driven data processing. Developers can also leverage pre-trained APIs to rapidly integrate AI into applications, or they can use the Vertex AI platform which is designed to help developers build and deploy AI agents with tools for orchestration, grounding, and action.
-**AI practitioners** - AI practitioners play a valuable role in customizing, deploying, and optimizing generative AI models. They leverage tools within Vertex AI to accelerate development and ensure responsible AI practices. Their expertise extends to scaling AI workloads, integrating models with BigQuery, and implementing responsible AI measures such as bias detection and adversarial testing.
+- **Business leaders**: Business leaders typically interact with pre-built gen AI solutions to enhance daily operations and improve customer experiences. For example, Gemini for Google Workspace can be used for content creation, data analysis, and document summarization.
+- **Developers**: Developers in your organization are responsible for building and deploying custom AI agents and integrating AI capabilities into existing applications. They can use AI Applications for custom agent creation, AI code generation, and AI-driven data processing. Developers can also leverage pre-trained APIs to rapidly integrate AI into applications, or they can use the Vertex AI platform which is designed to help developers build and deploy AI agents with tools for orchestration, grounding, and action.
+- **AI practitioners**: AI practitioners play a valuable role in customizing, deploying, and optimizing generative AI models. They leverage tools within Vertex AI to accelerate development and ensure responsible AI practices. Their expertise extends to scaling AI workloads, integrating models with BigQuery, and implementing responsible AI measures such as bias detection and adversarial testing.
 
 ## Cost
 
@@ -626,24 +626,24 @@ Training and deploying models often involve paying for the compute time used as 
 
 ### Pricing for using models
 
-**Usage-based**: You pay for the amount you use, often measured in tokens or characters processed. This is common for APIs like Google’s PaLM & Gemini APIs.
-**Subscription-based**: You pay a recurring fee for access to the model, often with tiers based on usage limits or features.
-**Licensing fees**: One-time or recurring fees for using a model, especially for commercial purposes or embedding in products.
-**Free tiers**: Some providers offer free access with limited usage for experimentation or non-commercial purposes.
+- **Usage-based**: You pay for the amount you use, often measured in tokens or characters processed. This is common for APIs like Google’s PaLM & Gemini APIs.
+- **Subscription-based**: You pay a recurring fee for access to the model, often with tiers based on usage limits or features.
+- **Licensing fees**: One-time or recurring fees for using a model, especially for commercial purposes or embedding in products.
+- **Free tiers**: Some providers offer free access with limited usage for experimentation or non-commercial purposes.
 
 ### Pricing metrics for using models
 
-**Tokens**: A token represents a piece of text, like a word or part of a word.
-**Characters**: Some providers, like Google, charge based on the number of characters processed.
-**Requests**: Sometimes you can be charged per request, regardless of the complexity or volume of the task.
-**Compute time**: The time taken to process your requests can also factor into the cost, especially for resource-intensive tasks.
+- **Tokens**: A token represents a piece of text, like a word or part of a word.
+- **Characters**: Some providers, like Google, charge based on the number of characters processed.
+- **Requests**: Sometimes you can be charged per request, regardless of the complexity or volume of the task.
+- **Compute time**: The time taken to process your requests can also factor into the cost, especially for resource-intensive tasks.
 
 ### Factors affecting cost
 
-**Model size and complexity**: Larger, more capable models generally cost more.
-**Context window**: A larger context window (the amount of text the model can consider) can increase costs.
-**Features**: Specialized features like fine-tuning or embedding can have separate pricing.
-**Deployment**: Depending on where you deploy your model and application, you may have compute based costs.
+- **Model size and complexity**: Larger, more capable models generally cost more.
+- **Context window**: A larger context window (the amount of text the model can consider) can increase costs.
+- **Features**: Specialized features like fine-tuning or embedding can have separate pricing.
+- **Deployment**: Depending on where you deploy your model and application, you may have compute based costs.
 
 ## Time
 
@@ -659,40 +659,40 @@ Aligning your ambitions with your capabilities is key to setting realistic expec
 ## Scale
 
 Is this for individual use, a small team, a large company, or millions of customers?
-**Small scale** - As an individual user or small team, you can go very far with pre-built tools. Try to leverage existing gen AI powered applications.
-**Large scale** - When building out solutions for millions of customers, you'll likely need a more robust and customized solution. Pick solutions that offer scalability and security. Factor in details to your decision like infrastructure costs, data storage, and potential latency challenges.
+- **Small scale**: As an individual user or small team, you can go very far with pre-built tools. Try to leverage existing gen AI powered applications.
+- **Large scale**: When building out solutions for millions of customers, you'll likely need a more robust and customized solution. Pick solutions that offer scalability and security. Factor in details to your decision like infrastructure costs, data storage, and potential latency challenges.
 
 ## Customization
 
 How specialized does your solution need to be? Powerful foundation models are constantly improving, making custom model development less necessary in many cases.
 
-**Start with existing models** - Explore pre-trained models available through APIs or open-source libraries. Fine-tune these models on your specific data to achieve better performance for your tasks.
-**Identify your unique needs** - What sets your project apart? Does it require specialized knowledge, handle complex tasks, or demand a unique user experience? This will help you determine the level of customization needed.
-**Consider data specifity** - If your project deals with specialized domains like law or medicine, consider fine-tuning with domain-specific datasets or exploring models specifically trained for those areas.
-**Consider task complexity** - Think about the complexity of the task itself. Are you aiming for simple tasks like text summarization or more intricate ones like code generation or creative writing? This influences model choice and training approaches.
+1. **Start with existing models** - Explore pre-trained models available through APIs or open-source libraries. Fine-tune these models on your specific data to achieve better performance for your tasks.
+2. **Identify your unique needs** - What sets your project apart? Does it require specialized knowledge, handle complex tasks, or demand a unique user experience? This will help you determine the level of customization needed.
+3. **Consider data specifity** - If your project deals with specialized domains like law or medicine, consider fine-tuning with domain-specific datasets or exploring models specifically trained for those areas.
+4. **Consider task complexity** - Think about the complexity of the task itself. Are you aiming for simple tasks like text summarization or more intricate ones like code generation or creative writing? This influences model choice and training approaches.
 
 ## User interaction
 
 Think about how users will interact with your AI and design an intuitive and engaging experience.
 
-**User interface (UI)** - Seamlessly integrate the AI into your existing workflows. This might involve a dedicated interface (e.g., a chatbot widget on your website) or embedding AI capabilities within your current applications.
-**User experience(UX)** - Aim for a user-friendly experience. Is it conversational, informative, or task-oriented? Consider the level of guidance and feedback users might need.
+- **User interface (UI)**: Seamlessly integrate the AI into your existing workflows. This might involve a dedicated interface (e.g., a chatbot widget on your website) or embedding AI capabilities within your current applications.
+- **User experience(UX)**: Aim for a user-friendly experience. Is it conversational, informative, or task-oriented? Consider the level of guidance and feedback users might need.
 
 ## Privacy
 
 How sensitive is the data you are working with?
 
-**Data security** - What measures will you implement to protect data during processing and storage? Implement robust security measures to protect data during processing and storage. Consider encryption, access controls, and secure data centers.
-**Compliance** - Are there specific regulations (GDPR, HIPAA, etc.) that your project needs to adhere to?
+- **Data security**: What measures will you implement to protect data during processing and storage? Implement robust security measures to protect data during processing and storage. Consider encryption, access controls, and secure data centers.
+- **Compliance**: Are there specific regulations (GDPR, HIPAA, etc.) that your project needs to adhere to?
 
 ## Other considerations
 
 How specialized does your solution need to be? Powerful foundation models are constantly improving, making custom model development less necessary in many cases.
 
-**Latency** - Consider real-time requirements. Do you need instantaneous responses, or can you tolerate some delay? If real-time interaction isn't critical, you have more flexibility in choosing models and infrastructure.
-**Connectivity** -  Consider offline functionality. Are there scenarios where the solution needs to function without internet access?
-**Accuracy** - Define acceptable tolerances. Determine the level of accuracy required for your AI's output. This will influence model selection, training data, and evaluation metrics.
-**Explainability** - Transparency is key. In certain domains, understanding the AI's reasoning is crucial. Consider using models or techniques that offer explainability features, especially in healthcare or finance.
+- **Latency**: Consider real-time requirements. Do you need instantaneous responses, or can you tolerate some delay? If real-time interaction isn't critical, you have more flexibility in choosing models and infrastructure.
+- **Connectivity**:  Consider offline functionality. Are there scenarios where the solution needs to function without internet access?
+- **Accuracy**: Define acceptable tolerances. Determine the level of accuracy required for your AI's output. This will influence model selection, training data, and evaluation metrics.
+- **Explainability**: Transparency is key. In certain domains, understanding the AI's reasoning is crucial. Consider using models or techniques that offer explainability features, especially in healthcare or finance.
 
 
 ## Making decisions
