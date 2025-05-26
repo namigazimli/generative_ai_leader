@@ -1,6 +1,6 @@
-#### Four primary ways to use Generative AI ####
+# Four primary ways to use Generative AI #
 
-### Create ###
+## Create ##
 
 Using generative AI to create new content, such as:
 
@@ -20,7 +20,7 @@ Generating code in various programming languages
 - Generate unit tests and other test cases for code, reducing the manual effort required for testing while still ensuring the code works as expected.
 - Generate code as a starting point for larger software development projects using Gemini Code Assist.
 
-### Summarize ###
+## Summarize ##
 
 Condense large amounts of information into concise summaries, such as:
 
@@ -38,7 +38,7 @@ Creating concise reports from complex data
 
 - Transform complex data into easily understandable visuals like graphs using Gemini in BigQuery.
 
-### Discover ###
+## Discover ##
 
 Help your customers and employees find what they need at the right time, such as:
 
@@ -57,7 +57,7 @@ Monitoring real-time events
 
 - Use anomaly detection to identify fraudulent transactions and prevent financial losses.
 
-### Automate ###
+## Automate ##
 
 Automate tasks that previously required human intervention, such as:
 
@@ -208,7 +208,7 @@ Artificial intelligence (AI): The broad field of building machines that can perf
 Machine learning (ML): A subset of AI where machines learn from data.
 Generative AI: An application of AI that creates new content.
 
-### Data quality ###
+## Data quality ##
 
 1. Accuracy - If the data is inaccurate, the model will learn incorrect patterns and make faulty predictions. Imagine teaching a child about animals using a book with mislabeled pictures—they would learn the wrong things. The same applies to AI.
 2. Completeness - Completeness refers to the size of a dataset as well as representation within the dataset. The size of the dataset is important because the model needs enough to make an accurate prediction. If a meteorologist tries to predict weather only based on the data of the past day, it will be a much worse prediction than if it used a much larger sample size.
@@ -216,7 +216,7 @@ Generative AI: An application of AI that creates new content.
 4. Consistency - Inconsistent data formats or labeling can confuse the model and hinder its ability to learn effectively. Imagine trying to assemble a puzzle where some pieces are labeled with numbers and others with letters—it would be a mess.
 5. Relevance - The data must be relevant to the task the AI is designed to perform. For example, data about traffic patterns in London is unlikely to be helpful for predicting crop yields in Kansas.
 
-### Data accessibility ###
+## Data accessibility ##
 
 1. Availability - If the necessary data simply is not available, the AI model can not be trained. For some problems, the data might exist, but it might be locked behind paywalls or restricted due to privacy concerns.
 2. Cost - Gathering and cleaning data can be expensive. The cost of acquiring high-quality data can be a significant barrier to AI development, especially for smaller organizations.
@@ -224,7 +224,7 @@ Generative AI: An application of AI that creates new content.
 
 ---
 
-### Machine learning approaches and data requirements ###
+# Machine learning approaches and data requirements #
 
 The quality, accessibility, and form of data are fundamental, but how that data is used for ML depends on the specific learning method. Machine learning has three primary learning approaches: supervised, unsupervised, and reinforcement learning, each with its own data requirements.
 Supervised models rely on labeled data, unsupervised models work with unlabeled data, and reinforcement learning learns through interaction and feedback.
@@ -242,11 +242,11 @@ Unsupervised ML models - deal with raw, unlabeled data to find natural groupings
 For example, an unsupervised learning algorithm could analyze customer purchase history from your companys database. It might uncover hidden segments of customers with similar buying habits, even though you never explicitly labeled those segments beforehand. This can be incredibly valuable for targeted marketing or product recommendations.
 Think of it as exploratory analysis. Unsupervised learning helps you understand the underlying structure of your data and uncover insights that you might not have even known to look for.
 
-### Reinforcement learning ###
+## Reinforcement learning ##
 
 Reinforcement learning is all about learning through interaction and feedback. Imagine a robot learning to navigate a maze. It starts with no knowledge of the maze's layout. As it explores and interacts with the maze, it collects data—bumping into walls (negative feedback) or finding shortcuts (positive feedback). Through this process of trial and error, the algorithm learns which actions lead to the best outcomes. It's like training a pet. You reward good behavior and discourage bad behavior. And over time, the pet learns to perform the desired actions. Similarly, in reinforcement learning, the algorithm learns to maximize rewards and minimize penalties by interacting with its environment. This type of learning is particularly useful in situations where you can't provide explicit instructions or labeled data. For example, you could use reinforcement learning to train a self-driving car to navigate complex traffic situations or to optimize the performance of a robot in a manufacturing plant.
 
-### Examples of machine learning approaches on Google Cloud ####
+## Examples of machine learning approaches on Google Cloud ##
 
 1. Predictive maintenance with Vertex AI (supervised learning) - By training a model on sensor data from machines like temperature, pressure, and vibration, Vertex AI can predict when a machine is likely to fail, enabling proactive maintenance and reducing downtime.
 
@@ -254,7 +254,7 @@ Reinforcement learning is all about learning through interaction and feedback. I
 
 3. Product recommendations with Vertex AI (reinforcement learning) - Vertex AI can train a reinforcement learning model to recommend products to users based on their browsing history, purchase behavior, and other factors. The model learns to maximize user engagement and sales by continuously refining its recommendations.
 
-### Data tools and management for ML workloads ###
+## Data tools and management for ML workloads ##
 
 Google Cloud offers a comprehensive suite of data tools and management capabilities tailored for ML workloads. These tools and capabilities are designed to support the entire ML lifecycle, from data preparation and model training to deployment and monitoring.
 
@@ -298,7 +298,7 @@ Large Language Models (LLMs) - One particularly exciting type of foundation mode
 
 Diffusion models - Diffusion models are another type of foundational model. They excel in generating high-quality images, audio, and even video by iteratively refining noise (or unstructured/random data and patterns) into structured data.
 
-### Factors when choosing a model for your use case ###
+## Factors when choosing a model for your use case ##
 
 1. *Modality* - When selecting a generative AI model, it's crucial to consider the modality of your input and output. Modality refers to the type of data the model can process and generate, such as text, images, video, or audio. If your application focuses on a single data type, like generating text-based articles or creating audio files, you'll want to choose a model optimized for that specific modality. For applications that require handling multiple data types, such as generating image captions (processing images and producing text) or creating video with accompanying audio, you'll need a multimodal model. These models can understand and synthesize information across different modalities.
 
@@ -335,9 +335,9 @@ Collectively, these Google Cloud foundation models empower businesses to enhance
 
 ---
 
-### Google strategies for foundation model limitations ###
+# Google strategies for foundation model limitations #
 
-# Foundation model limitations
+## Foundation model limitations ##
 
 1. **Data dependency** - The performance of foundation models is heavily data-dependent. They require large datasets, and any biases or incompleteness in that data will inevitably seep into their outputs. It's like asking a student to write an essay on a book they haven't read. If the data or questions are inaccurate or biased, the AI's performance will suffer.
 
@@ -365,7 +365,7 @@ Collectively, these Google Cloud foundation models empower businesses to enhance
 - Fine-tuning a code generation model to generate code in a particular programming language.
 - Fine-tuning a translation model to translate between specific languages or domains.
 
-### Humans in the loop (HITL) ###
+## Humans in the loop (HITL) ##
 
 Beyond these techniques, we must remember the invaluable role of humans in the loop (HITL). Machine learning models are powerful, but they sometimes need a human touch. For tasks requiring judgment, context, or handling incomplete data, human expertise is essential. HITL systems integrate human input and feedback directly into the ML process. This collaboration makes models more adaptable, especially in areas like the following.
 
@@ -492,9 +492,9 @@ Workflow agents examples.
 
 ---
 
-## Platform layer ##
+# Platform layer #
 
-# Key features and benefits of Vertex AI
+## Key features and benefits of Vertex AI ##
 
 The platform layer provides the foundation for building and scaling your AI initiatives. Vertex AI is Google Cloud's unified machine learning (ML) platform designed to streamline the entire ML workflow. It provides the infrastructure, tools, and pre-trained models you need to build, deploy, and manage your ML and generative AI solutions.
 
@@ -505,7 +505,7 @@ The platform layer provides the foundation for building and scaling your AI init
 5. Customization - Fine-tune and adapt models to your specific needs using the built-in IDE.
 6. Easy integration - Integrate your models into applications seamlessly using available APIs.
 
-# MLOps for efficient workflows
+## MLOps for efficient workflows ##
 
 Operationalizing model training can be challenging and involves thinking about infrastructure and security. By using Vertex AI, you get a fully managed compute infrastructure, high-performance ML optimized training jobs, distributed training, hyperparameter optimization, and enterprise security. Vertex AI also includes ML operations (MLOps) tools built in to help you orchestrate end-to-end ML workflows, perform feature engineering, run experiments, manage and iterate your models, track ML metadata, and monitor and evaluate model quality. MLOps helps automate, standardize, and manage the ML project lifecycle, enabling better collaboration and continuous improvement.
 
@@ -517,7 +517,7 @@ Operationalizing model training can be challenging and involves thinking about i
 
 ---
 
-## Model layer ##
+# Model layer #
 
 At the heart of every AI and machine learning system lies the model. Think of it as the brain of the operation. These aren't just any algorithms. They're sophisticated mathematical structures trained on massive amounts of data. This training process allows them to learn patterns and relationships, ultimately enabling them to perform a wide range of tasks, such as generating content, analyzing data, and classifying information.
 Within the Vertex AI platform, you have multiple options for how to handle AI models for your project. You can choose to build a model from scratch or use an existing model.
@@ -533,7 +533,7 @@ Within the Vertex AI platform, you have multiple options for how to handle AI mo
 3. **Open models** - Access a variety of enterprise-ready open models.
 4. **Third-party models** - Model Garden supports third-party models from partners with foundation models.
 
-# Build models with Vertex AI #
+## Build models with Vertex AI ##
 
 With Vertex AI, you have two options for training and using your own models. You can go fully custom and create and train models at scale using any ML framework (PyTorch, TensorFlow, scikit-learn, or XGBoost), or you can use AutoML to create and train models with minimal technical knowledge and effort. AutoML allows you to build these types of models:
 
@@ -543,3 +543,36 @@ With Vertex AI, you have two options for training and using your own models. You
 | Video data    | Action recognition, classification, object tracking.  |
 | Text data     | Classification, entity extraction, sentiment analysis.|
 | Tabular data  | Classification/regression, forecasting.               |
+
+Follow this standard workflow when creating your models in Vertex AI:
+1. **Gather your data** - Determine the data you need for training and testing your model based on the outcome you want to achieve.
+2. **Prepare your data** - Make sure your data is properly formatted and labeled.
+3. **Train** - Set parameters and build your model.
+4. **Manage your model** - Review model metrics to evaluate the model’s performance and monitor changes over time.
+5. **Deploy and predict** - Make your model available to use.
+
+---
+
+# Infrastructure layer
+
+The "infrastructure layer" is the foundation upon which any AI system is built. It's the combination of hardware and software that provides the necessary computing power, storage, and networking capabilities to train, deploy, and scale AI models. This layer is crucial for handling the massive datasets and complex computations involved in modern AI, especially with the rise of large language models and generative AI. Google has invested heavily in building a robust and cutting-edge AI infrastructure, designed to handle the most demanding AI workloads. Here are some key components.
+
+## High performance computing
+
+Imagine your company wants to undertake a new, bold gen AI project. However, the engineering team hits a major roadblock. Training the complex model requires significant processing power, far beyond the capabilities of your company's in-house servers. It takes hours, if not days, to train your specialized models and the long training times have started to hinder the team's progress to the point where it's delaying the product launch. Your existing infrastructure simply can't keep up, and the cost of scaling their own hardware is prohibitive. This is where high-performance computing, the heart of Google's AI infrastructure, comes in.
+
+**GPUs and TPUs** - These specialized processors are the workhorses of AI. They excel at parallel processing, or doing multiple things at once, which is crucial for training large neural networks quickly and efficiently. GPUs were originally designed for graphics rendering, but since they offer general-purpose parallel processing power they’ve increasingly been used in the AI domain. TPUs are Google's custom-designed chips specifically optimized for AI tasks.
+
+**Hypercomputers** - A hypercomputer is essentially a supercomputer built by connecting many individual computers (nodes) together. These nodes contain GPUs and TPUs. By linking them with high-speed networks, they work together as one massive computing unit. They provide the massive scale necessary for training and running the most demanding generative AI models.
+
+## High performance storage
+
+Having high-performance storage is essential when building gen AI apps. Gen AI models are data hungry because they learn by analyzing massive datasets, often petabytes in size, containing text, images, code, and other forms of data. This storage provides the capacity and speed to store and access these enormous datasets efficiently. Without it, training would be incredibly slow or even impossible.
+
+**Large-scale storage systems** - Google Cloud's storage infrastructure is optimized for AI workloads, offering high throughput (the amount of work done within a specific period of time), scalability, and the ability to create dense compute clusters for faster training and inference. As AI models and datasets grow, the system can scale seamlessly to accommodate the increasing demands. Losing data due to storage failures can be catastrophic, so the storage is highly reliable to ensure data durability.
+
+**Fast storage access** - The storage systems also need to provide fast read and write speeds to keep up with the demands of the training process. Otherwise, if storage access is slow, it can significantly hinder the training process.
+
+## Networking
+
+Fast and efficient communication is essential for coordinating the work all of the processors in a high performance computing cluster are undertaking. Google's global fiber network provides high-bandwidth, low-latency connectivity, ensuring smooth data flow and efficient communication between different parts of the AI infrastructure. Using Google Cloud infrastructure can benefit teams in several ways, particularly with respect to scalability, performance, and cost-effectiveness.
