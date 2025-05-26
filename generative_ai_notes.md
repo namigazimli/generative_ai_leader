@@ -538,7 +538,7 @@ Within the Vertex AI platform, you have multiple options for how to handle AI mo
 With Vertex AI, you have two options for training and using your own models. You can go fully custom and create and train models at scale using any ML framework (PyTorch, TensorFlow, scikit-learn, or XGBoost), or you can use AutoML to create and train models with minimal technical knowledge and effort. AutoML allows you to build these types of models:
 
 | Data type     | Supported objectives                                  |
-| :---          |                                                   ---:|
+| :---          | :---                                                  |
 | Image data    | Classification, object detection.                     |
 | Video data    | Action recognition, classification, object tracking.  |
 | Text data     | Classification, entity extraction, sentiment analysis.|
