@@ -726,3 +726,48 @@ By proactively planning for maintenance, you'll ensure the long-term success and
 3. **Data updates** - Plan for regular data updates to keep your model fresh and relevant. This might involve adding new data sources, cleaning existing data, or adapting to evolving data formats.
 4. **Hardware and infrastructure** - Consider the maintenance needs of your hardware and infrastructure. This includes server maintenance, security updates, and capacity planning to accommodate growing data and user demands.
 5. **Security and compliance** - Maintain a vigilant approach to security. Regularly review and update your security measures to protect against evolving threats. Ensure ongoing compliance with data privacy regulations as they change.
+
+
+---
+
+# Gemini for Google Workspace
+
+**Google Workspace** is a collection of cloud-based productivity and collaboration tools that help people create, communicate, and collaborate, such as Gmail, Google Docs, Google Sheets, Google Meet, and Google Slides. You learned about the Gemini app, but remember, Gemini is a gen AI model that is then used in many other applications. Some of those applications were built in Google Workspace. You can access Gemini directly within your Workspace apps through Gemini for Workspace.
+
+**Gemini for Google Workspace** allows you to use Google's generative AI capabilities. Depending on your version of Google Workspace, you may have access to a different range of features and security protections. **Google Workspace business and enterprise** licenses come with extra enterprise-grade data protection for your organization. These protections extend to the Gemini for Google Workspace features and the Gemini app (with Gemini Advanced). The licenses also come with administrative features for managing your organization's usage and access.
+
+**Gemini side panel** - One way to access Gemini for Workspace is through the Gemini side panel, which is present on the side of many Workspace apps. With the side panel, Gemini can assist you with summarizing, analyzing, and generating content by utilizing insights gathered from your emails, documents, and more—all without switching applications or tabs. For example, new employees can use the Gemini in Drive side panel to get up to speed on projects and company initiatives. They can ask Gemini questions like "summarize the goals and current status of Project Phoenix" and easily find the information they need, enabling them to quickly become familiar with the project.
+
+**Gemini in Gmail** - Gemini in Gmail uses generative AI to help users write and refine emails more efficiently. An HR representative can use Gemini to write a company-wide email announcing a new employee benefit. They can provide a prompt that includes information about the new benefit, who is eligible, and the effective date, and Gemini will generate a draft email.
+
+**Gemini in Google Docs** - Gemini in Google Docs helps you streamline the process of content creation, refining, and proofreading right within your document as you write. A marketing team member can utilize Gemini to generate captivating taglines and draft social media posts for a new athletic shoe campaign. The user can provide a prompt like "Generate three social media posts that highlight the benefits of our athletic shoes, focusing on comfort and performance." Gemini then generates text options for the posts.
+
+**Gemini in Google Slides** - Gemini in Google Slides can help you and your team work more effectively by using AI to generate photorealistic images that enhance your presentations. By providing Gemini with a descriptive prompt that outlines the subject, setting, or style you desire, you can quickly create images that otherwise would require time and effort to source or design. This streamlines the presentation creation process and frees up your team to focus on content and delivery.
+
+**Gemini in Google Sheets** - Gemini in Google Sheets helps you generate formulas using AI. You can provide Gemini with prompts using plain language or generic cell names to create complex formulas. For example, you can ask Gemini to "create a formula to find cell C1 in range D:G and output the value in column G." Gemini then creates the formula.
+
+**Gemini in Google Meet** - Gemini in Google Meet can help your global team communicate by providing real-time transcription and translation, facilitating seamless communication in multilingual meetings. It could also automate meeting summaries and action item extraction, saving time and increasing productivity for participants.
+
+These Gemini for Workspace features allow you to use AI-enhanced workflows in your daily work to become more productive and effective.
+
+**Google Vids** - is an online video creation and editing app available to Google Workspace users through your organization. With Help me Create in **Vids**, you can use Gemini to generate a first draft of your video. As a project manager, you can use Vids to share project updates, timelines, and key insights with your stakeholders to more effectively communicate information than an email or lengthy report can. 
+
+**AppSheet** - is a no-code app development tool included with Google Workspace enterprise editions. With Gemini in AppSheet, you can quickly create apps using AI by describing your needs in a prompt using natural language. Gemini can create an app structure with tables, columns, and links based on your description, such as "Manage inspections of my facility." You can then review and edit the app structure before creating the app in the AppSheet app editor.
+
+
+---
+
+# Prompting techniques
+
+When it comes to prompting techniques, there are a few different approaches. 
+- **Zero-shot prompting** is like asking a foundation model to complete a task with no prior examples, relying solely on its existing knowledge. 
+- **One-shot prompting** involves showing the foundation model just one example, allowing it to learn and apply that knowledge to similar situations. 
+- **Few-shot prompting**, on the other hand, provides the foundation model with multiple examples to learn from, which helps it better understand the task and improve its performance.
+
+## Role prompting
+
+**Role prompting** is a technique used to guide the behavior of LLMs by assigning them a specific role or persona. This can be anything from a business analyst or Shakespearean actor to a helpful customer service agent. By instructing the model to adopt a particular role, you influence the style, tone, and focus of its responses.
+
+## Prompt chaining
+
+When working in a tool like Gemini, it's important to understand how previous prompts may impact future prompts. **Prompt chaining** is a powerful technique for getting more complex and nuanced results from large language models like Gemini. It's like having a conversation with the AI where each response builds upon the previous one, leading to a more sophisticated and refined outcome. This is where the concept of a chatbot comes in. You can have a back and forth with Gemini.
