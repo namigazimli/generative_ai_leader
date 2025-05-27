@@ -771,3 +771,35 @@ When it comes to prompting techniques, there are a few different approaches.
 ## Prompt chaining
 
 When working in a tool like Gemini, it's important to understand how previous prompts may impact future prompts. **Prompt chaining** is a powerful technique for getting more complex and nuanced results from large language models like Gemini. It's like having a conversation with the AI where each response builds upon the previous one, leading to a more sophisticated and refined outcome. This is where the concept of a chatbot comes in. You can have a back and forth with Gemini.
+
+---
+
+# Reuse prompts with Gemini and Gems
+
+## Reusing prompts
+
+You may already find yourself reusing prompts or parts of prompts in your day-to-day workflow. As a start, you can save these prompts as templates in a document somewhere like a Google Doc and a Google Sheet.
+- Sample example: "Write Python code to [Task]. Use [Libraries/Frameworks] and follow [Coding style guidelines]."
+But there are also more efficient ways of doing this. Google’s products and features make gen AI accessible and easy to use for everyone, without needing to be a professional prompt engineer.
+
+## Prompt chaining
+
+Remember prompt chaining? It lets you continue your conversation in the same chatbot so the chatbot knows your history before continuing on with the new prompt. Well, if you don’t want to keep repeating the same history, you can use the same conversation thread and keep working there. In Gemini, you can even name your chats and pin them for easy access.
+
+### Prompt chaining scenario
+
+Imagine you're a marketing manager using Gemini to develop a campaign for a new line of organic skincare products. Let’s see prompt chaining in action with two sets of prompts and responses. Note how Gemini remembers the context from the previous prompts.
+
+- MM: I'm launching a new line of organic skincare products focused on anti-aging. My target audience is women aged 35-55 who are interested in natural beauty solutions. Give me some ideas for a marketing campaign.
+- Gem: Of course! Below you can find a list with several campaign ideas, including social media strategies, influencer collaborations, and content marketing suggestions: [...]
+- MM: Okay, let's focus on the content marketing strategy. Develop a content calendar for the next three months with blog post topics, social media post ideas, and potential email newsletter themes.
+- Gem: Here's a detailed content calendar breakdown aligned with your target audience and campaign goals (organic skincare, anti-aging, women 35-55): [...]
+
+## Gemini Advanced
+
+**Gemini Advanced** is an upgraded version of Gemini with extra features, making it far more capable at highly complex tasks, like coding, logical reasoning, following nuanced instructions, and creative collaboration. You can adjust your data retention settings to determine how long information is stored and delete your conversation history at any time. For more detailed information, see the help center article, [Upgrade to Gemini Advanced](https://support.google.com/gemini/answer/14517446?hl=en&co=GENIE.Platform).
+
+### Saved info
+Using the same prompts in a chain won’t always work because, sometimes, you just want the gen AI tool to remember the context but not everything in your whole conversation history. For example, maybe you're a sales rep preparing for calls with potential clients. You might want to practice different sales pitches but wouldn't want the AI's feedback to be influenced by your previous practice sessions or specific details about past clients. In these cases, you can actually save information in Gemini that it will always use. This is done through your **Settings** in your **Saved info**. You can let Gemini know that you're a sales rep so you do not need to constantly reiterate this in every prompt conversation. Or let’s say a sales team leader wants to use Gemini to generate weekly sales reports. They can save their team's sales targets, key performance indicators (KPIs), and preferred reporting format in the Saved info. This ensures that Gemini always uses the correct information when generating reports, without the need to re-enter it each time.
+
+## Gems
