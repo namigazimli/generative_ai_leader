@@ -899,3 +899,21 @@ While Gems excel at general tasks and workflows, NotebookLM is designed to help 
 - ***Summarize documentation***: Investment firms and legal teams need to thoroughly analyze documents and data. Upload financial statements, legal documents, and market research reports into NotebookLM. The team can then use the AI to quickly identify key information, summarize findings, and flag potential risks or inconsistencies.
 - ***Project proposals and plans***: Keep everyone aligned and informed by creating a shared NotebookLM with all project-related information.
 
+
+---
+
+# Gemini for Google Cloud
+
+Just like with Google Workspace, Gemini is revolutionizing how we interact with Google Cloud. From simplifying data analysis to boosting developer productivity, Gemini for Google Cloud offers a suite of AI-powered tools designed to enhance your cloud experience. Let’s explore the power of Gemini within Google Cloud! 
+
+# Always on enterprise security with Gemini for Google Cloud
+
+Gemini for Google Cloud does not use your prompts or Gemini’s responses to train models. It comes with the standard Google Cloud enterprise protections.
+
+- **Gemini Cloud Assist**: Gemini Cloud Assist is like having an AI expert on your team who helps you design, manage, and optimize applications on Google Cloud. It provides personalized guidance and is integrated with your Google Cloud environment to provide application lifecycle management assistance. It analyzes your cloud environment, your resources deployed, as well as metrics and logs to deliver actionable insights tailored to your needs.
+- **Gemini in BigQuery**: Gemini in BigQuery makes data analysis easier and more accessible. It can help you write code, understand your data, and even generate insights automatically, regardless of your SQL experience. This means faster and more efficient data exploration.
+- **Gemini Code Assist**: Gemini Code Assist acts as an AI pair programmer, helping developers write better code, just like when two programmers work together to solve problems. Gemini Code Assist can provide code suggestions, generate code blocks, and even offer explanations. It supports over 20 popular programming languages, code editors, and developer platforms, all of which help developers increase productivity.
+- **Gemini in Colab Enterprise**: A Colab Enterprise notebook is an interactive environment that lets you write and execute code. Gemini in Colab Enterprise can use AI to help you write Python code in your notebook by suggesting code segments as you type and generating code based on your descriptions. This streamlines your data analysis and machine learning workflows.
+- **Gemini in Databases**: Gemini in Databases helps developers and database administrators manage their databases more effectively. It uses AI to simplify many aspects of using a database, from building applications with natural language to managing an entire fleet of databases from a single interface.
+- **Gemini in Looker**: With Gemini in Looker, you can analyze data and gain insights faster. As an intelligent assistant, it helps you understand your data, create visualizations, and even generate reports, making data exploration more intuitive.
+- **Gemini in Security**: Gemini in Security helps security teams detect, contain, and stop threats from spreading. It provides near-instant analysis of security findings and potential attack paths. Gemini in Security also summarizes prevalent tactics, techniques, and procedures used by threat actors, giving customers around the world detailed and timely threat intelligence.
