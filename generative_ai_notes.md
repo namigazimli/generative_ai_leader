@@ -848,3 +848,54 @@ RAG empowers AI models to go beyond simply memorizing information and instead le
 - **Extending LLM capabilities**: RAG can constrain the output from an LLM so that it only generates a response based on the specific context it was provided. 
 
 One way to start using a RAG system without any coding or database development is with a tool called **NotebookLM**.
+
+
+---
+
+# NotebookLM
+
+NotebookLM is an AI-first notebook, grounded in your own documents, designed to help you gain insights faster. NotebookLM is your personalized AI research partner who has read the provided source material and can answer any question about it. It’s a unique tool that is built using Gemini models and is designed to help you learn and understand information better by acting as a virtual research assistant. You can "ground" NotebookLM in specific sources like documents, presentations, or even audio and video files. This means your AI assistant will only use information from those sources to answer your questions and generate summaries. It can even create different types of summaries, like bullet points, Q&A formats, or even a creative story!
+
+# NotebookLM Plus
+
+For users who want to take their research to the next level, there's NotebookLM Plus, a subscription plan that offers benefits like increased capacity, customization of response length and style, and usage analytics. 
+
+# NotebookLM Enterprise
+
+NotebookLM Enterprise takes NotebookLM Plus to the next level by adding compliance and administrative features necessary for enterprise environments. This includes extra privacy and security features to give you enhanced control over your data. Your notebook information is only shared with your chosen collaborators, and you can manage access using predefined identity and access management (IAM) roles. To learn more, see the documentation for What is [NotebookLM Enterprise?](https://cloud.google.com/agentspace/notebooklm-enterprise/docs/overview).
+
+# How it works?
+
+NotebookLM operates on the concept of "notebooks" to help you organize and interact with your information. Here's a breakdown:
+
+- **Creating a notebook**: Think of a notebook as a container for a specific project, topic, or area of interest. You start by giving your notebook a title and then uploading the relevant source materials (documents, PDFs, even audio or video files) that you want it to learn from.
+- **The chat interface**: Within each notebook, you have a single, ongoing chat with the NotebookLM AI. You can ask questions, request summaries, or give instructions, just like you would in a regular chat. NotebookLM will respond using only the information from the sources you've uploaded to that specific notebook.
+- **Saving insights as note**: When the AI provides a response you find valuable, you can save it as a note within the notebook. These notes become an organized collection of key takeaways, summaries, or important points.
+- **Sharing and collaboration**: You can create "shared notebooks" to collaborate with others. In a shared notebook, everyone can access the same sources, ask questions, and contribute to the notes. This fosters collaborative learning and knowledge sharing.
+
+Imagine you're writing a research paper. You can upload all your relevant documents to NotebookLM and ask it to:
+- Summarize key findings from each source.
+- Identify connections and contradictions between different perspectives.
+- Generate outlines and drafts for your paper.
+- Answer specific questions about the topic.
+NotebookLM essentially becomes your personal research assistant, helping you navigate complex information and gain deeper insights. It's a powerful tool for students, researchers, and anyone who wants to learn more effectively.
+
+# How is NotebookLM different from Gemini and Gems?
+
+While Gems excel at general tasks and workflows, NotebookLM is designed to help you deeply understand and learn from specific sets of information. It's like having a dedicated expert who has thoroughly analyzed your chosen materials and is ready to answer any question you have.
+
+## NotebookLM versus Gems
+
+- **Hyper-focused knowledge**: Instead of drawing from a broad knowledge base, NotebookLM focuses solely on the sources you provide. This could be anything from research papers and articles to meeting notes and presentations.
+- **Interactive learning**: NotebookLM goes beyond simply summarizing information. It encourages active learning by allowing you to ask questions, generate different types of summaries, and even create quizzes to test your understanding.
+- **Source-based answers**: Every answer and insight provided by NotebookLM is directly grounded in your uploaded sources. This ensures accuracy and allows you to easily trace back to the original information. If you ask NotebookLM a question that isn't covered in the materials you've provided, it will honestly tell you that it can't answer. It won't invent information or speculate. This ensures that the information you get is always grounded in your sources and reliable.
+
+# Use cases
+
+- ***Create training materials and documentation***: Onboard new team members and facilitate knowledge transfer by creating a central repository for essential resources. Create a dedicated notebook to share with new hires with relevant onboarding materials (employee handbook, product documentation, training presentations). The new employees can then use NotebookLM to ask questions, clarify information, and gain a deeper understanding of their role and the company.
+- ***Researching a new topic***: Gather articles and videos on a subject you're interested in and have NotebookLM create a comprehensive summary or answer specific questions you have.
+- ***Learn by listening to audio***: With audio overviews in NotebookLM you can learn about the material covered in your sources through a podcast-like experience. NotebookLM will  summarize your material, connecting topics, and produce a downloadable audio with back-and-forth conversation between two AI hosts.
+- ***Preparing for a presentation***: Feed NotebookLM your presentation slides and ask it to generate speaker notes or practice questions to help you rehearse.
+- ***Summarize documentation***: Investment firms and legal teams need to thoroughly analyze documents and data. Upload financial statements, legal documents, and market research reports into NotebookLM. The team can then use the AI to quickly identify key information, summarize findings, and flag potential risks or inconsistencies.
+- ***Project proposals and plans***: Keep everyone aligned and informed by creating a shared NotebookLM with all project-related information.
+
