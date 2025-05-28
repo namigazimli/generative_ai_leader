@@ -822,3 +822,29 @@ You can choose to use Google’s existing Gems that were built for many differen
 When you create a custom Gem, you provide it with instructions on how to act, what to do, and more. You are essentially prompting the agent or Gem on how to act. It's time to take all that prompting practice to the next level: Prompting to build your agents. This is a very good place to use role-prompting, where you prompt the Gem to act as though it is in a specific type of role, such as an air traffic controller. You can also provide specific documents and resources to a Gem, giving it a focused knowledge base to draw from. Imagine a "code reviewer" Gem that has access to your project's coding style guidelines and best practices documentation. This would allow the Gem to provide feedback grounded in your specific project requirements.
 
 Regardless of your use case, when creating Gems, it's important to be as clear and specific as possible in your instructions. You can also provide examples to illustrate your desired outcomes. Either way, be prepared to refine your instructions over time as you use the Gem and identify areas for improvement. Think about how users will interact with the Gem and what kind of information they will need to provide. By following these guidelines, you can create powerful Gems that streamline tasks, improve efficiency, and provide valuable insights. 
+
+
+---
+
+# Grounding
+
+In the previous lesson, you learned how you can attach user-provided resources to your Gem. You can also attach documents and resources in your prompts in the Gemini app with Gemini Advanced. This is called grounding. Grounding refers to the ability of the AI model to connect its output to verifiable and specific sources of information. 
+
+This is a critical aspect of building trust and reliability in AI systems. This is something you can already do in a Gem or Gemini prompt with no coding at all to improve accuracy and relevance to the task you need your agent to solve. For example, you can create a Gemini prompt that helps you refine your writing by editing your text to meet your organization’s specific guidelines and standards. You can provide Gemini with resources, such as your company’s style guides within the prompt itself, or by uploading relevant files. By grounding with this additional information, you provide the AI model with a richer context. This can lead to more accurate and insightful results.
+
+# RAG: Retrieval-augmented generation
+
+One powerful grounding technique is retrieval-augmented generation (RAG). It involves:
+- **Retrieving relevant information**: The AI model first retrieves relevant information from a vast knowledge base (like a database, a set of documents, or even the entire web). This retrieval process is often powered by sophisticated techniques, like [semantic search](https://cloud.google.com/discover/what-is-semantic-search?hl=en) or [vector databases](https://cloud.google.com/discover/what-is-a-vector-database?hl=en).
+- **Generating output**: The model then uses this retrieved information to generate the final output. This could be anything from answering a question to writing a creative story.
+
+**Model only (without RAG)** - The user inputs a prompt. The model provides output without external knowledge. The output might be outdated, and is more likely to have hallucinations.
+
+**Model with RAG** - The user inputs a prompt. A query is sent to a backend retrieval system such as a vector database or search engine to find the most relevant information, and embed it as a part of the prompt. The model provides the output with the latest external knowledge. The output is much less likely to have hallucinations.
+
+RAG empowers AI models to go beyond simply memorizing information and instead learn to effectively access and utilize external knowledge sources to generate more insightful and reliable outputs.
+- **Improved accuracy and relevance**: By accessing and utilizing relevant information directly, RAG models can produce more accurate and informative outputs.
+- **Improved explainability and transparency**: RAG can increase transparency and trust in the AI system by showing the specific sources used to generate the output, ensuring that claims can be checked for accuracy. 
+- **Extending LLM capabilities**: RAG can constrain the output from an LLM so that it only generates a response based on the specific context it was provided. 
+
+One way to start using a RAG system without any coding or database development is with a tool called **NotebookLM**.
