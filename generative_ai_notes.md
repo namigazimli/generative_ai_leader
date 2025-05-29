@@ -917,3 +917,62 @@ Gemini for Google Cloud does not use your prompts or Gemini’s responses to tra
 - **Gemini in Databases**: Gemini in Databases helps developers and database administrators manage their databases more effectively. It uses AI to simplify many aspects of using a database, from building applications with natural language to managing an entire fleet of databases from a single interface.
 - **Gemini in Looker**: With Gemini in Looker, you can analyze data and gain insights faster. As an intelligent assistant, it helps you understand your data, create visualizations, and even generate reports, making data exploration more intuitive.
 - **Gemini in Security**: Gemini in Security helps security teams detect, contain, and stop threats from spreading. It provides near-instant analysis of security findings and potential attack paths. Gemini in Security also summarizes prevalent tactics, techniques, and procedures used by threat actors, giving customers around the world detailed and timely threat intelligence.
+
+
+---
+
+# A brief history of Gen AI agents
+
+Today’s generative AI agents can achieve a goal by observing the world and acting upon it using the tools it has at its disposal. This wasn't always the case. Early virtual agents were limited to predefined paths and lacked true understanding. But thanks to advances like generative AI and retrieval augmented generation (RAG), today's agents can understand your intent, access relevant information, and provide much more helpful and natural interactions. All due to the connections of the three components of an agent.
+
+# Review the components of an agent
+
+Let’s review the key components of an agent discussed in previous courses.
+- **Foundational model**: This is the underlying language model (LLM) that powers the agent. It could be a small or large language model, a Google model like Gemini, or a model from another provider. The key is to select a model with training data relevant to the agent's intended use case.
+- **Tools**: Tools enable the agent to interact with the outside world. These can include extensions that connect to APIs, functions that act as mock API calls, and data stores like vector databases. Tools allow the agent to not only observe the world but also act upon it.
+- **Reasoning loop**: This is the core of the agent, responsible for making decisions and taking actions. It's an iterative process where the agent considers its goal, the available tools, and the information it has gathered. Frameworks like ReAct (Reason and Act) are commonly used to guide the reasoning process.
+
+---
+
+# Using models
+
+Keep in mind that generative AI agents are powered by generative AI models. These models are the brains of the operation. Previous courses in this learning path have covered aspects of building and tuning AI models. In this lesson, we will focus on how to effectively use your gen AI model in your agent. Once your AI models are trained and ready to go, there are still ways to improve your desired results. One such way is by adjusting certain parameters and settings.
+
+# Sampling parameters and settings
+
+Sampling parameters act as settings that influence the AI model's behavior, giving you more customized results. Think of these as knobs and dials you can adjust with your prompt input to impact the model's output. By tweaking these settings, you can ensure the model's output aligns with your specific needs, whether it's generating more creative text, providing more concise summaries, or staying within a certain tone. Let's explore some of the most common parameters you can adjust.
+1. **Token count** - Imagine each word and punctuation mark in your text as a character. These characters are grouped into smaller units called tokens, which represent meaningful chunks of text. Models have limits on how many tokens they can handle at once. A higher token count allows for longer and more complex conversations, but it also requires more processing power. For example, one token is roughly equivalent to four characters in English. So, a hundred tokens would be about sixty to eighty words.
+2. **Temperature** - This parameter controls the "creativity" of the model, because it adjusts the randomness of word choices during text generation, influencing the diversity and unpredictability of the output. A higher temperature makes the output more random and unpredictable, while a lower temperature makes it more focused, deterministic and repeatable.
+3. **Top-p (nucleus sampling)** - "Top-p" stands for the cumulative probability of the most likely tokens considered during text generation. This is another way to control the randomness of the model's output. It concentrates the probability on the most likely tokens, making the output more coherent and relevant. A lower top-p value leads to more focused responses (i.e. only the most probable tokens), while a higher value allows for more diversity (i.e. extending to lower probability tokens as well).
+4. **Safety settings** - These settings allow you to filter out potentially harmful or inappropriate content from the model's output. You can adjust the level of filtering based on your specific needs and preferences.
+5. **Output length** - This determines the maximum length of the generated text. You can set it to a specific number of words or characters or allow the model to generate text until it reaches a natural stopping point.
+
+By experimenting with these parameters, you can significantly influence the AI model's behavior. For example, if you need a concise and factual answer, you might use a lower temperature and a smaller output length. If you're looking for a more creative and open-ended response, you could increase the temperature and top-p values.
+
+## How do you access these settings and sampling parameters?
+
+The way you access and change these settings and parameters varies based on where the models are coming from and how you are accessing the models themselves. Many models can be accessed via APIs, which stands for application programming interfaces. Essentially, an API is a way for different software systems to communicate and exchange information. It acts like a messenger, allowing one application to request services or data from another. For example, when you use an app to check the weather, it's likely using an API to get that information from a weather service. In the case of generative AI, your application would use an API to send a prompt to the model and receive a response. These APIs often allow you to customize the model's behavior by taking settings and parameters as input along with your prompt.
+
+# Google's generative AI APIs
+
+Google’s generative AI APIs offer pre-trained large language models that can be fine-tuned for specific tasks. These APIs include capabilities for text completion, multi-turn chat, code generation, and image generation. For example, the Imagen API can be used to generate and customize images.
+
+## Getting started experimenting with generative AI APIs
+
+Google provides two tools where you can easily start to access and experiment with generative AI model APIs.
+
+**Google AI Studio** - Google AI Studio is a web-based tool that allows developers, students, and researchers to try Gemini models and begin building with the Gemini Developer API. It is designed for ease of use and accessibility, targeting a broad audience, including non-technical users who want to leverage AI capabilities without deep expertise in machine learning.
+
+**Vertex AI Studio** - Vertex AI Studio is a Google Cloud console tool for rapidly prototyping and testing generative AI models. It provides developers with a space to test models using prompt samples, design and save prompts, and tune foundation models.
+
+# What is the difference between Google AI Studio and Vertex AI Studio?
+
+Both Google AI Studio and Vertex AI Studio allow you to experiment with and utilize Google's Gemini API, but they cater to different needs and levels of expertise. Here's a breakdown of their key differences:
+
+| Attributes |  Google AI Studio    |   Vertex AI Studio    |
+|   ---      |  ---------------     |   ----------------    |
+| Focus      | A streamlined easy-to-use interface for exploring Gemini's capabilities, experimenting with parameters, and generating different creative text formats. | A comprehensive and robust environment for building, training, and deploying machine learning models that is part of the Google Cloud Vertex AI Platform.|
+| Users      | Beginners, hobbyists, and those at the initial stages of development. | Professionals, researchers, and developers. |
+| Access     | Login with a standard Google account. | Access through Google Cloud. |
+| Limitations | It has usage limits (queries per minute, requests per minute, tokens per minute), making it less suitable for large-scale or production-level applications. It's primarily intended for initial prototyping or small-scale model deployments | Has a service charge based on your usage. |
+| Advantages | A simplified interface that is easy to get started and use, even for those without deep machine learning expertise. | More flexible quotas for usage, potentially increased upon request. Offers enterprise-grade security and compliance features. |
