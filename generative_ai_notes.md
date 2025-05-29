@@ -976,3 +976,94 @@ Both Google AI Studio and Vertex AI Studio allow you to experiment with and util
 | Access     | Login with a standard Google account. | Access through Google Cloud. |
 | Limitations | It has usage limits (queries per minute, requests per minute, tokens per minute), making it less suitable for large-scale or production-level applications. It's primarily intended for initial prototyping or small-scale model deployments | Has a service charge based on your usage. |
 | Advantages | A simplified interface that is easy to get started and use, even for those without deep machine learning expertise. | More flexible quotas for usage, potentially increased upon request. Offers enterprise-grade security and compliance features. |
+
+Choosing the right tool depends on your specific needs and expertise. If you're just starting out, Google AI Studio is a great place to learn and experiment. If you need a more powerful and scalable solution for professional use cases, Vertex AI Studio is the better choice.
+
+
+---
+
+# The reasoning loop
+
+The reasoning loop is a key component of a generative AI agent that governs how the agent takes in information, performs internal reasoning, and uses that reasoning to inform its next action or decision. It is an iterative, introspective process that continues until the agent achieves its goal or reaches a stopping point. The complexity of the reasoning loop can vary greatly depending on the agent and the task it is performing.
+Here's a breakdown of the key aspects of the reasoning loop:
+- **Iterative process**: The reasoning loop is not a one-time operation, but rather a cyclical process where the agent continuously evaluates its progress and determines the next best action to take. This loop involves steps for action, tool selection, and observation.
+- **Internal reasoning**: The agent uses its underlying language model to think through the steps it needs to take to complete a task. The language model provides the agent with reasoning and logic capabilities.
+- **Decision making**: Based on its internal reasoning, the agent decides on the next course of action. This involves choosing the appropriate tools to use and determining the necessary inputs for those tools.
+- **Reasoning frameworks**: The reasoning loop utilizes various prompt engineering frameworks and techniques to guide its reasoning and planning.
+
+# Prompt engineering techniques
+
+There are many different prompting techniques that one can use, but we will highlight two of the most common for this course: ReAct prompting and chain-of-thought (CoT) prompting.
+
+**ReAct prompting** - ReAct is a prompting framework that allows the language model to reason and take action on a user query, with or without in-context examples.
+
+**Chain-of-thought (CoT)** - Chain-of-thought prompting is a technique where you guide a language model through a problem-solving process by providing examples with intermediate reasoning steps, helping it learn to approach new problems in a more structured and logical way.
+
+# ReAct prompting
+
+ReAct, which stands for "reasoning and acting," is like giving an LLM a brain and a pair of hands. It allows the LLM to not only think about a problem but also take actions to solve it. This is a big step up from traditional prompting, where the LLM could only passively generate text. Imagine you're asking an LLM to find you a good Italian restaurant nearby. With ReAct, the LLM can:
+- Think: Okay, I need to find Italian restaurants that are close by and have good reviews.
+- Act: I'll search online for Italian restaurants in this area.
+- Observe: Ah, here are some options with high ratings.
+- Think: Which one is the best fit based on the user's preferences?
+- Act: I'll check the menus and see which one has the most appealing dishes.
+- Observe: This one has delicious-looking pasta!
+- Respond: I recommend [restaurant name]. It has great reviews, is located nearby, and has a fantastic pasta selection.
+
+This "thought-action-observation" loop allows the LLM to interact with the real world and gather information, making it much more powerful than a traditional LLM.
+
+## Why is ReAct important?
+
+- **Dynamic problem solving**: ReAct allows LLMs to tackle complex tasks that require interacting with external resources and adapting to new information.
+- **Reduced hallucination**: By grounding the LLM's reasoning in real-world data, ReAct can help reduce the risk of generating incorrect or nonsensical information.
+- **Increased trustworthiness**: The ability to see the LLM's reasoning process and how it interacts with external sources makes its responses more transparent and trustworthy.
+
+## Key components of ReAct
+
+- **Think**: The LLM generates a thought about the problem, similar to CoT.
+- **Act**: The LLM decides what action to take, such as searching the web, accessing a database, or using a specific tool; the LLM specifies the input for the action, like a search query or database command.
+- **Observe**: The LLM receives feedback from the action, such as search results or database entries.
+- **Respond**: The LLM generates a response, which could involve providing an answer to the user, taking further actions, or formulating a new thought for the next iteration.
+
+## ReAct in action
+
+ReAct has been successfully used in various applications, including:
+- **Question answering**: LLMs can use ReAct to access external knowledge sources and answer questions more accurately.
+- **Fact verification**: LLMs can verify claims by searching for evidence online.
+- **Decision making**: LLMs can use ReAct to gather information and make informed decisions in interactive environments.
+
+The agent provides a prompt to the model, asking it to generate the next step and its corresponding output, which may include a thought, an action (including a tool choice), an action input, and an observation.
+
+# Chain-of-thought (CoT)
+
+Remember prompt chaining? Where you keep prompting in the same thread so the LLM keeps your chat history and learns more as you go? Well, you can do something very similar behind the scenes for your user using chain-of-thought (CoT) prompting. CoT enables reasoning capabilities through intermediate steps. Think of CoT as a way to make LLMs even smarter by teaching them to think step-by-step, just like a human would. Instead of just giving the LLM a prompt and expecting an answer, you guide it through the reasoning process. You provide examples of how to solve similar problems, showing the steps involved. This helps the LLM learn to approach problems in a more logical and structured way. It is similar to teaching a student to think out loud. You're teaching the LLM to think out loud. By showing it the intermediate steps, you're helping it develop a "chain of thought" that leads to the correct answer.
+
+## Why is CoT important?
+
+CoT is a powerful technique that helps LLMs think a bit more like humans. By guiding them through the reasoning process, we can unlock their full potential and achieve even more impressive results.
+- **Improved reasoning**: CoT helps LLMs solve complex problems that require logical thinking.
+- **Better accuracy**: By breaking down problems into smaller steps, CoT can lead to more accurate results.
+- **Enhanced explainability**: CoT makes it easier to understand how the LLM arrived at an answer, which is important for building trust and transparency.
+
+## Key components of CoT
+
+Just like there are different ways to solve a problem, there are different ways to implement CoT. Some popular techniques include:
+- **Self-consistency**: Encouraging the LLM to generate multiple solutions and choose the most consistent one.
+- **Active-prompting**: Allowing the LLM to ask clarifying questions or request additional information.
+- **Multimodal CoT**: Combining text with other forms of data, like images or videos, to enhance reasoning.
+
+## CoT in action
+
+Chain-of-thought prompting has been successfully used in various applications, including:
+- **Complex reasoning tasks**: LLMs can use CoT to break down complex problems into smaller, more manageable steps, leading to more accurate solutions in tasks like math word problems or logical reasoning puzzles.  
+- **Explanation generation**: LLMs can use CoT to generate step-by-step explanations for their answers, making their reasoning process transparent and understandable, which is crucial for building trust and identifying potential errors.
+- **Multi-step planning**: LLMs can use CoT to plan and execute complex tasks that require multiple steps, such as writing a story, planning a trip, or debugging code.
+
+# Choosing a prompting framework
+
+There are many other frameworks and techniques that can be used for prompt engineering and within your reasoning loop. All these different techniques can be combined and leveraged in different ways depending on the use case. The best framework for you will depend on your use case. For example, while both ReAct and CoT enhance LLM reasoning, they have different strengths:
+- CoT focuses on internal reasoning, guiding the LLM through a chain of thought.
+- ReAct focuses on external interaction, allowing the LLM to gather information and take actions in the real world.
+
+In fact, ReAct and CoT can be combined for even more powerful results. By integrating both techniques, we can create LLMs that are capable of both deep reasoning and dynamic interaction with the world around them.
+
