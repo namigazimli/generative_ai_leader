@@ -1139,3 +1139,36 @@ Along with these services, Google Cloud also offers a wide range of pre-built AP
 
 ---
 
+# Retrieval-augmented generation (RAG) and tooling
+
+## Pre-RAG history
+
+Before retrieval-augmented generation (RAG), models could not directly learn from tool data. They could use tools to fetch information, but lacked the ability to process and integrate that data into their knowledge. Their understanding was limited to their training data, and tool-retrieved data was used only for the immediate query, not for learning. RAG solves this by enabling models to retrieve and learn from data provided by tools.
+
+## How the model works with tools
+
+Retrieval-augmented generation (RAG) enhances the capabilities of large language models (LLMs) by grounding their responses in external knowledge sources. This process allows the model to access and process information beyond its training data, leading to more accurate, relevant, and up-to-date responses. After the user submits a query or request to the LLM, here's how RAG works with tools.
+1. **Retrieval**
+The LLM, equipped with retrieval tools, identifies relevant information from external sources. These tools can include:
+- **Data stores**: These can be internal databases or other sources of structured and unstructured data.
+- **Vector databases**: These databases store embeddings (numerical representations) of text, allowing the LLM to find semantically similar information to the user's query. The LLM uses the user query to create an embedding and searches the vector database for matching documents or passages.
+- **Search engines**: The LLM can use search engines (via extensions or APIs) to find relevant web pages, articles, or other online content.
+- **Knowledge graphs**: These structured databases store information about entities and their relationships. The LLM can query knowledge graphs to retrieve facts and relationships relevant to the user's query.
+The LLM uses these tools to retrieve a set of potentially relevant documents or passages.
+2. **Augmentation**
+The retrieved information is then incorporated (or "augmented") into the prompt that is fed to the LLM. This augmented prompt now contains both the user's original query and the relevant context retrieved from external sources.
+3. **Generation**
+The LLM processes the augmented prompt and generates a response. Because the prompt includes relevant external information, the LLM can generate a more informed, accurate, and contextually appropriate response. It can also cite the sources of its information, increasing transparency and trustworthiness.
+
+## Iteration
+
+In some RAG systems, the LLM might iterate on the retrieval process. For example, if the initial retrieval doesn't yield satisfactory results, the LLM might refine its query or use different retrieval tools to find more relevant information. It could also ask clarifying questions of the user. This iterative process allows the LLM to continuously improve the quality and relevance of its responses.
+By combining the power of LLMs with the ability to access and process external knowledge, RAG systems create more powerful and reliable AI agents.
+
+## Data stores
+
+RAG allows LLMs to access and process information beyond their training data, making them more accurate and relevant. A key component of this process are data stores in AI Applications. They act as structured and unstructured knowledge bases that your agent can draw upon. You can access a variety of data store options to connect your agent to your data through AI Applications, including:
+- **Websites**: Access and process information directly from web pages, enabling your agent to stay up-to-date with current events or access publicly available information.
+- **Structured data**: Connect to information organized in tables or JSON format, such as product catalogs, customer databases, and internal knowledge bases. Vertex AI can automatically understand the structure of your data or allow you to define it.
+- **Unstructured data**: Utilize files in various formats such as HTML, PDF, and DOCX, making it possible for your agent to access information from a wide range of sources.
+
