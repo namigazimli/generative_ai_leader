@@ -1067,3 +1067,75 @@ There are many other frameworks and techniques that can be used for prompt engin
 
 In fact, ReAct and CoT can be combined for even more powerful results. By integrating both techniques, we can create LLMs that are capable of both deep reasoning and dynamic interaction with the world around them.
 
+---
+
+# Types of agent tools
+
+Agent tooling equips agents with the resources they need to be effective. Think of it as providing the agent with the right skills, connections, and knowledge to achieve its goals. These tools allow agents to access information, perform actions, and interact with various systems. We can categorize agent tools into four key types.
+
+1. **Extensions(APIs)** - Extensions bridge the gap between an agent and external APIs. APIs (application programming interfaces) are sets of rules that govern how software interacts. Extensions provide a standardized way for agents to use APIs, regardless of the API's specific design. This simplifies API interaction, making it easier for agents to access external services and data.
+
+**Example**: An agent designed to book travel might use an extension to interact with a travel company’s API. The extension handles the complexities of communicating with travel company’s systems, allowing the agent to focus on the task of finding and booking flights.
+
+2. **Functions** - Functions are like specialized tools within the agent's toolbox. They represent specific actions the agent can perform. An agent's reasoning system selects the appropriate function based on the task at hand. Functions can encapsulate complex logic or interactions, making them reusable and manageable. 
+
+**Example**: A "calculate_price" function might take flight details and passenger information as input and return the total cost. The agent can call this function whenever it needs to calculate a price.
+
+3. **Data stores** - Data stores provide agents with access to information. This can include real-time data, historical data, or knowledge bases. Data stores ensure that the agent's responses are accurate, relevant, and up-to-date.
+
+**Example**: An agent might use a data store to access current weather conditions, stock prices, or a database of customer information.
+
+4. **Plugins** - Plugins extend the agent's capabilities by adding new skills or integrations. They can connect the agent to specific services, provide access to specialized tools, or enable interaction with particular platforms.
+
+**Example**: A plugin could enable an agent to interact with a calendar application, allowing it to schedule appointments. Another plugin might integrate with a payment gateway, enabling the agent to process transactions.
+
+# How the reasoning loop works with tools
+
+The ReAct (reasoning and acting) cycle prompting technique describes how agents use tools:
+1. **Reasoning (tool selection)** - The agent analyzes the task and determines which tools are needed. It considers the available extensions, functions, and data stores to choose the most appropriate resources.
+2. **Acting (tool execution)** - The agent executes the selected tool. This might involve calling an API via an extension, invoking a function, or querying a data store. The agent provides the necessary inputs to the tool.
+3. **Observation** - The agent receives the output from the tool. This output becomes the "observation" in the ReAct cycle.
+4. **Iteration (dynamic iteration)** - Based on the observation, the agent reasons about the next steps. It might need to select different tools, refine its approach, or gather more information. This cycle repeats until the task is complete.
+
+## Example: Scheduling a garden consultation
+
+**Reasoning** - The agent needs to find an available time slot for a garden consultation. It selects the scheduling plugin, which integrates with the gardener's calendar.
+
+**Acting** - The agent uses the scheduling plugin to check the gardener's availability for the next week, specifying the desired consultation duration (e.g., 30 minutes) and the client's preferred days (e.g., weekdays). It also accesses the customer database (via a data store) to retrieve the client's name and contact information to include in the appointment details.
+
+**Observation** - The scheduling plugin returns a list of available time slots.
+
+**Iteration** - The agent presents the available slots to the client. If the client requests a specific time that's unavailable, the agent might use a function to suggest alternative times or offer to put the client on a waiting list. Once the client confirms a time, the agent uses the scheduling plugin again to book the appointment and sends a confirmation email to both the client and the gardener. This cycle continues until the consultation is successfully scheduled.
+
+# Google's tooling
+
+Whether building your agents inside or outside of Google Cloud, the options for tooling are extensive. You can custom-build tools, leverage third-party solutions, or, as we'll focus on here, utilize the powerful suite of tools available within Google Cloud. While this lesson won't cover every single Google Cloud product and feature, it will highlight some key options to spark ideas for the kinds of integrations you can create. It's important to note that many of these tools can be used even if you choose to build your core agent logic outside of Google Cloud.
+
+## Key Google Cloud tool for agents
+
+**Cloud Storage** - A highly scalable and durable object storage service. Use Cloud Storage to store and retrieve data that your agent needs.
+
+**Databases(Cloud SQL, Cloud Spanner, Firestore)** - Google Cloud offers a variety of database solutions to suit your needs. Your agent can use these databases to store and retrieve information, manage user data, or track its own progress.
+
+**Cloud Run functions** - Create serverless functions that act as specialized tools for your agent. Cloud Run functions can be used to connect to databases, call external APIs, perform complex calculations, or handle other specific tasks. They are easily triggered by your agent and scale automatically.
+
+**Cloud Run** - For more complex agent tools that require containerized environments, Cloud Run  provides a serverless platform for deploying and running stateless containers. This is ideal for custom tools that have specific dependencies or require more control.
+
+**Vertex AI** - Agents can use other agents as tooling. You can use Vertex AI to create models or agents that are called as tooling by other agents.
+
+## Pre-built AI APIs
+
+Along with these services, Google Cloud also offers a wide range of pre-built APIs that provide powerful functionalities for your agent. These APIs can be used for tasks like understanding natural language, analyzing images, translating text, and more.
+
+1. **Speech-to-Text API** - The Speech-to-Text API accurately converts speech into text. This is useful for transcribing meetings, customer service calls, or even video content.
+2. **Text-to-Speech API** - The Text-to-Speech API converts text into natural-sounding speech, which is helpful for creating voice user interfaces in devices and applications, and for personalized communication.
+3. **Translation API** - The Translation API can translate text, documents, websites, and even audio and video files into more than 135 languages.
+4. **Document Translation API** - The Document Translation API can translate formatted documents while keeping the original layout.
+5. **Document AI API** - The Document AI API allows businesses to extract data from various document formats. It can be used to automate data capture and document processing. This is useful for many kinds of documents, from invoices to contracts to medical records. Document AI can also summarize large documents using generative AI.
+6. **Cloud Vision API** - The Cloud Vision API allows developers to understand the content of an image by applying powerful machine learning models. It can detect objects, faces, and landmarks, and even read text within images (OCR). This API is useful for a wide range of applications, including image tagging, content moderation, and visual search.
+7. **Cloud Video Intelligence API** - The Cloud Video Intelligence API allows developers to analyze video content and extract meaningful information. It can identify objects, actions, and events within a video, and even transcribe spoken words. This API can be used for applications like content recommendation, video search, and media analysis.
+8. **Natural Language API** - The Natural Language API helps derive insights from unstructured text using Google's machine learning. This API can be used to understand the sentiment of text, classify content, and extract important entities such as people, places, and events. This API can also analyze text in multiple languages.
+
+
+---
+
