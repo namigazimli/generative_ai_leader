@@ -1245,3 +1245,19 @@ Today's contact centers are complex, needing to handle 24/7 communication across
 # Agentspace
 
 One of the most powerful ways to transform your organization isn’t necessarily through products for your external customers, but actually through supporting your internal knowledge workers and employees. Often, employees search across multiple sources for information within their organization. Examples of such sources include software used for analytics, productivity, content, customer relationship management, communications, portfolio management, supply chain, and enterprise planning. One way to support knowledge workers is by making information across your enterprise more discoverable. **Google Agentspace** is designed to help you and your team use your company's information more effectively. It uses AI to create customized agents that can access and understand data from various sources, regardless of where that data is stored. These agents can then be integrated into your organization’s internal websites or dashboards. Think of it as a way to give your employees their own personal research assistants, but for work.
+
+## Agentspace is a launch point for all your enterprise-ready expert agents.
+
+**Connect to NotebookLM Enterprise** - Connect to NotebookLM Enterprise so employees can upload information to analyze, get insights, and listen to audio summaries of data.
+
+**Connect to multimodal search agents** - Connect to multimodal search agents grounded in your data (structured and unstructured) across multiple systems (Google Drive, Confluence, Jira, ServiceNow, and more) so your employees can find relevant information within your company.
+
+**Add generative AI assistants** - Add generative AI assistants that are grounded in your enterprise data and can be prompted to take actions through connectors (tools). For example, creating Google Calendar events or editing issues in Jira Cloud.
+
+**Add custom agents** - Add custom agents through Conversational Agents.
+
+## How is Agentspace different from NotebookLM? 
+
+While Agentspace can connect to NotebookLM Enterprise, they serve different core purposes. Think of NotebookLM Enterprise as your specialized AI tool for diving deep into specific documents and web sources – asking questions, summarizing, and creating new content based only on those sources. Agentspace, on the other hand, is your comprehensive enterprise AI assistant. It uses AI agents and unified search to automate tasks and find information across all your connected business systems, not just specific documents you upload.
+
+Google Agentspace is a central platform for AI agents that are designed for your specific business needs. It brings together the power of Google's AI with your company’s data to make it easier for employees to do their jobs. It is designed to be a secure way for businesses to deploy AI agents using Google Cloud’s infrastructure. You can think of it like your personal AI assistant for work. It helps employees find information, understand data, and automate tasks. It is designed to increase productivity for teams in a variety of fields like marketing, sales, HR, software, and research and development.
