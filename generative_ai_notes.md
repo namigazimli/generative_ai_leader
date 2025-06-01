@@ -1172,3 +1172,76 @@ RAG allows LLMs to access and process information beyond their training data, ma
 - **Structured data**: Connect to information organized in tables or JSON format, such as product catalogs, customer databases, and internal knowledge bases. Vertex AI can automatically understand the structure of your data or allow you to define it.
 - **Unstructured data**: Utilize files in various formats such as HTML, PDF, and DOCX, making it possible for your agent to access information from a wide range of sources.
 
+
+---
+
+# Vertex AI Search
+
+Vertex AI Search offers both search and recommendation solutions.
+
+## Search solutions 
+
+Search allows you to create a powerful search experience for your public website. It can index and search across a variety of data types, including structured data in BigQuery and unstructured documents stored in Google Cloud Storage. This ensures your users can easily find the information they need on your website, regardless of how it's stored Search also extends to include some specific forms of search such as:
+- ***Document search***: If your primary need is to search across a large repository of unstructured documents stored in Google Cloud Storage, this is the ideal solution. It's optimized for understanding and retrieving information from text-heavy data, making it perfect for internal knowledge bases, document archives, and more.
+- ***Media search***: For organizations dealing with rich media libraries, media search provides specialized capabilities. It's designed to understand and search within images, videos, and audio files. This allows users to find specific media assets based on their content, metadata, or even spoken words within audio or video.
+- ***Healthcare search***: Addressing the unique needs of the healthcare industry, this option enables searching across healthcare data while supporting regulatory compliance. It allows professionals to access patient records, research articles, and medical guidelines efficiently and securely.
+- ***Search for commerce***: Specifically designed for e-commerce, this option focuses on building a search app for your retail catalog. It optimizes for product discovery, understanding product attributes, and handling complex product queries.
+
+## Recommendation solutions
+
+The general purpose recommendation engine can be used to recommend similar content within websites, documents, and other structured content. It analyzes user behavior and content attributes to provide personalized recommendations, increasing user engagement and content discovery. This also extends to include some specific forms of recommendations such as:
+- ***Media recommendations***: Tailored for consumer-focused media applications like audio/video streaming and digital publishing, this option provides specialized recommendations. It understands user preferences and consumption patterns within media content to suggest relevant audio, video, articles, and more. (YouTube)
+- ***Retail recommendations***: Optimized for e-commerce, this solution drives sales by providing personalized product recommendations. It leverages user browsing history, purchase data, and product attributes to suggest items that are likely to be of interest to each individual shopper. (Shopping websites)
+
+# How Vertex AI Search works
+
+Regardless of the specific search or recommendation option you choose, Vertex AI Search operates on a foundation of intelligent data connection, grounding, and generative AI. It seamlessly connects to your existing data stores, whether they are structured databases, unstructured document repositories, or a combination of both. This connection is crucial as it allows Vertex AI Search to act as an agent, observing the user's query or context (the environment) and acting by retrieving relevant information or suggesting relevant items (using the data stores as tools) to achieve the goal of providing the right information or recommendation at the right time.
+**A key strength of Vertex AI Search** lies in its ability to ground gen AI LLM responses with your first-party data, curated third-party data, and even Google's knowledge graph (Grounding with Google Search), minimizing "hallucinations" and ensuring trustworthy information. This grounding is where the connection to RAG comes in. By using your own data sources as the foundation for LLM responses, Vertex AI Search implements a RAG approach, ensuring that the information provided is relevant, accurate, and grounded in the context of your specific data.
+
+Vertex AI Search also gives you the options of adding **extra generative AI features** to your search functionality.
+- **Search summaries**: Vertex AI Search can generate concise and informative summaries of search results, saving users time and effort. These summaries can be tailored to different needs, providing a quick overview of a document, a comparison of multiple products, or a synthesis of key findings from a set of search results.
+- **Answers and follow ups**: Vertex AI Search can add AI generated answers to your search results. Users can ask questions in natural language to your website’s search and get AI generated answers based on the search results. Users can then follow up with further questions.
+
+Vertex AI Search is **built for enterprise** and offers granular access controls to help ensure data security. It also provides advanced analytics to understand search trends and user behavior and scalable infrastructure to handle large volumes of data and search requests. It's designed to meet the demanding requirements of organizations of all sizes. Vertex AI Search is built to easily integrate with existing enterprise systems through APIs and SDKs. Whether you're building a customer-facing search experience or an internal knowledge base for employees, Vertex AI Search can be seamlessly integrated into your workflow.
+
+
+---
+
+# Customer engagement
+
+## Google's Customer Engagement Suite
+
+Websites, even with the best search, are not necessarily enough for your company. Customers frequently don’t want to search. They want to connect with your company directly to get the answers and support they are looking for. These points of communication can be a pain point between customers and companies, but they are also an extremely important point of connection. Positive customer engagement could be the difference between the success and failure of your company. Google’s Customer Engagement Suite has tools designed to support your company in engaging with customers effectively. The tools are built using conversational AI, some of which is also generative AI.
+With the Customer Engagement Suite, you can build:
+- **Conversational Agents**: Conversational Agents to act as effective chatbots communicating with your customers.
+- **Agent Assist**: Agent Assist to support your live human contact center agents.
+- **Conversational Insights**: Conversational Insights to gain insights into all your communications with customers (through chatbot agents or human agents).
+
+All of this can be built on top of Google’s **Contact Center as a Service (CCaaS)**, an enterprise-grade contact center solution that is native to the cloud. Let’s dive deeper into the details of how these all work and where generative AI fits in.
+
+## Conversational Agents
+
+You may be a bit skeptical of customer service chatbots. But the types of conversational agents you can build today have come a long way. Remember, there are two primary methodologies you can use when building conversational agents: deterministic and generative. While deterministic AI alone can be rigid, and generative AI alone may lack structure, their combination creates a powerful solution. A hybrid approach allows you to build conversational agents that can handle a wide range of customer needs effectively. With Conversational Agents in Google Cloud, you have flexible options for building and integrating your agents with your existing tools. Create simple agents with generative AI by using natural language to instruct your agent or complex hybrid agents with custom rules and logic.
+
+- **Deterministic**: Deterministic is more associated with some historical agents. It is a rule-based, very defined system for your chatbot agents to follow. It will use very defined logic such as if the user presses this number, go to this route. Everything you want a deterministic agent to do needs to be explicitly defined. Deterministic agents usually require low to medium code to build.
+- **Generative**: Generative is based on new generative AI technology. It uses large language models to give a real conversational feel to your chatbot. These agents will determine what to do on their own based on your prompt unless you specifically tell it otherwise. Generative agents usually require prompting and either no code or low code to build.
+- **Hybrid**: Google Cloud Conversational Agents empowers you to build hybrid agents that combine the strengths of deterministic and generative AI. This approach offers strict control while leveraging generative AI's flexibility to better address customer needs.
+
+
+## Agent Assist
+
+There will always be use cases where conversational agents are not enough or tricky situations where the human touch is needed. This is where live agents come in. But using human agents comes with its own challenges. Not all human agents are the same and they have different levels of experience. There can be a lot of training needed, especially when a new agent starts. This is where Agent Assist comes in. It is a tool that supports live human agents with in-the-moment assistance, generated responses, and real-time coaching to help them resolve customer issues faster and with greater accuracy. Using AI and generative AI, Agent Assist can recommend agent responses to customers, suggest the appropriate knowledge base content to solve a customer’s issue, transcribe or translate calls in real time, summarize conversations and more.
+
+## Conversational Insights
+
+Whether using live or virtual agents, these connections with your customers provide lots of value and insights for your company. Conversational Insights analyzes conversational data from across the customer journey to provide contact center leaders and managers with the data-driven insights to boost efficiency, improve agent performance, and create better customer experiences. This tool uses machine learning analytics to provide you with information such as agent and caller sentiment, entity identification, and call topics. It can automatically identify interesting customer interactions in need of further review. With Generative FAQ in Insights, you can also see the common questions that customers are asking your contact center and how these questions are being answered. This information can help you identify gaps in your FAQs, track trending questions, and improve customer service responses.
+
+## Contact center as a service (CCaaS)
+
+Today's contact centers are complex, needing to handle 24/7 communication across multiple channels (phone, text, email, etc.) while maintaining security and customer privacy. CCaaS, part of Google's Customer Engagement suite, simplifies this by providing a complete contact center solution. It manages the infrastructure, integrates with CRMs, and offers omnichannel support (consistent experience across all channels, like websites, apps, phone, and text). CCaaS handles simultaneous multichannel communication, channel switching, multimodal interactions (text, voice, images), and agent routing, freeing businesses to focus on customer experience. CCaaS seamlessly integrates with other Customer Engagement Suite tools, including Conversational Agents for automated support, Agent Assist for real-time agent guidance, and Conversational Insights for valuable data analysis.
+
+---
+
+# Agentspace
+
+One of the most powerful ways to transform your organization isn’t necessarily through products for your external customers, but actually through supporting your internal knowledge workers and employees. Often, employees search across multiple sources for information within their organization. Examples of such sources include software used for analytics, productivity, content, customer relationship management, communications, portfolio management, supply chain, and enterprise planning. One way to support knowledge workers is by making information across your enterprise more discoverable. **Google Agentspace** is designed to help you and your team use your company's information more effectively. It uses AI to create customized agents that can access and understand data from various sources, regardless of where that data is stored. These agents can then be integrated into your organization’s internal websites or dashboards. Think of it as a way to give your employees their own personal research assistants, but for work.
