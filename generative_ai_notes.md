@@ -255,7 +255,7 @@ All these Google Cloud tools are designed to work together seamlessly. You can a
 
 A broad field that encompasses many different techniques, one of which is deep learning (DL). Deep learning is a powerful subset of machine learning, distinguished by its use of artificial neural networks. These networks enable the processing of highly complex patterns and the generation of sophisticated predictions. Neural networks can leverage both labeled and unlabeled data, a strategy known as semi-supervised learning. They train on a blend of a small amount of labeled data and a large amount of unlabeled data. That way, they learn foundational concepts and generalize effectively to novel examples. Generative AI uses the power of deep learning to create new content spanning text, images, audio, and beyond. Deep learning techniques, particularly those centered on neural networks, are the engine behind these generative models.
 
-Remember foundation models from course one? Foundation models use deep learning. They are trained on massive datasets that allow them to learn complex patterns and perform a variety of tasks across different domains. They are incredibly powerful machine learning models trained on a massive scale, often using vast amounts of unlabeled data. This training allows them to develop a broad understanding of the world, capturing intricate patterns and relationships within the data they consume. Think of a foundation model as a highly advanced learner. It's like a student who has read everything in an entire library, absorbing knowledge from countless books, articles, and websites. This deep and extensive learning allows foundation models to be adapted to a wide range of tasks.
+Foundation models use deep learning. They are trained on massive datasets that allow them to learn complex patterns and perform a variety of tasks across different domains. They are incredibly powerful machine learning models trained on a massive scale, often using vast amounts of unlabeled data. This training allows them to develop a broad understanding of the world, capturing intricate patterns and relationships within the data they consume. Think of a foundation model as a highly advanced learner. It's like a student who has read everything in an entire library, absorbing knowledge from countless books, articles, and websites. This deep and extensive learning allows foundation models to be adapted to a wide range of tasks.
 
 **Large Language Models (LLMs)** - One particularly exciting type of foundation model is the LLM. These models are specifically designed to understand and generate human language. They can translate languages, write different kinds of creative content, and answer your questions in an informative way, even if they are open ended, challenging, or strange. This is likely the most common foundation model you've encountered, such as in popular generative AI chatbots like Gemini. They also help power many search engines you use today.
 
@@ -333,9 +333,13 @@ Collectively, these Google Cloud foundation models empower businesses to enhance
 Beyond these techniques, we must remember the invaluable role of humans in the loop (HITL). Machine learning models are powerful, but they sometimes need a human touch. For tasks requiring judgment, context, or handling incomplete data, human expertise is essential. HITL systems integrate human input and feedback directly into the ML process. This collaboration makes models more adaptable, especially in areas like the following.
 
 ***Content moderation*** - HITL ensures accurate and contextually appropriate moderation of user-generated content, filtering out harmful or inappropriate material that algorithms alone might miss.
+
 ***Sensitive applications*** - In fields like healthcare or finance, HITL provides oversight for critical decisions, ensuring accuracy and mitigating risks associated with automated systems.
+
 ***High-risk decision making*** - When ML models inform decisions with significant consequences, such as medical diagnoses or criminal justice assessments, HITL acts as a safeguard, providing a layer of human review and accountability.
+
 ***Pre-generation review*** - Before deploying ML-generated content or decisions, human experts can review and validate the outputs, catching potential errors or biases before they impact users.
+
 ***Post-generation review*** - After ML outputs are deployed, continuous human review and feedback help identify areas for improvement, enabling models to adapt to evolving contexts and user needs.
 
 ---
