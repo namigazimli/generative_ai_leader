@@ -1031,6 +1031,17 @@ There are many other frameworks and techniques that can be used for prompt engin
 
 In fact, ReAct and CoT can be combined for even more powerful results. By integrating both techniques, we can create LLMs that are capable of both deep reasoning and dynamic interaction with the world around them.
 
+Key differences summarized:
+
+| Feature       | Chain-of-Thought (CoT)    | ReAct (Reasoning and Acting)    |
+| :---          | :---                      | :---                            |
+| Core Idea     | Internal, step-by-step reasoning  | Interleaving internal reasoning with external actions and observations |
+| Interaction   | None; solely relies on internal knowledge  | Interacts with external tools/environments (e.g., web search, APIs) |
+| Knowledge     | Limited to pre-trained knowledge | Can acquire real-time, external information    |
+| Hallucination | More susceptible to hallucination if knowledge is lacking | Less susceptible due to external grounding |
+| Adaptability  | Less adaptable to dynamic situations | Highly adaptable; can refine plans based on observed results |
+| Use Cases     | Math problems, logical puzzles, structured reasoning | Complex multi-step tasks, interactive decision-making, knowledge-intensive QA |
+
 ---
 
 # Types of agent tools
